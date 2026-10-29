@@ -1,0 +1,1180 @@
+{
+    ".github/dependabot.yml": {
+        "size": 222,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117788759722,
+        "word_count": 19,
+        "hashes": {
+            ".github/dependabot.yml": "0f89d931802962f2434275bc2d0981e1968b3deac5da516fce554b893554430e"
+        }
+    },
+    ".github/workflows/tests.yml": {
+        "size": 789,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117799972704,
+        "word_count": 68,
+        "hashes": {
+            ".github/workflows/tests.yml": "65791a346350b0d4bd07bed86bc7b56dee3fb93127aa60059148b3e3e8803e11"
+        }
+    },
+    "RTK.md": {
+        "size": 1616,
+        "mtime_ns": 1793233114314107773,
+        "indexed_at_ns": 1793233118537837992,
+        "word_count": 264,
+        "hashes": {
+            "rtk.md": "64609a49317d308d1bf013b316b347ab42b0c2ce3b12ede309f76d0798125967"
+        }
+    },
+    "app/Actions/Fortify/CreateNewUser.php": {
+        "size": 834,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117800331933,
+        "word_count": 64,
+        "hashes": {
+            "app/actions/fortify/createnewuser.php": "87e63f9d1cfcead062d28654bdce9b5dd6b7ed597de801065521da748d9caabb"
+        }
+    },
+    "app/Actions/Fortify/ResetUserPassword.php": {
+        "size": 686,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117800653936,
+        "word_count": 55,
+        "hashes": {
+            "app/actions/fortify/resetuserpassword.php": "c92d823dea393716bc1f11be1e5d65db11f61b3a5ecaca62c49d96ccbda38a34"
+        }
+    },
+    "app/Concerns/PasswordValidationRules.php": {
+        "size": 736,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117801016638,
+        "word_count": 66,
+        "hashes": {
+            "app/concerns/passwordvalidationrules.php": "11378592bc0f89cc35f03ac7edfab45d1e9f8c919960e4bb66b34881c58a9567"
+        }
+    },
+    "app/Concerns/ProfileValidationRules.php": {
+        "size": 1258,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117801324993,
+        "word_count": 116,
+        "hashes": {
+            "app/concerns/profilevalidationrules.php": "c7e6fe9dd1b4eb0d209feb8275c4356a9b1c0ab47f88e6983bc764f7969d4b0e"
+        }
+    },
+    "app/Console/Commands/InstallFeaturesCommand.php": {
+        "size": 2975,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117801615993,
+        "word_count": 235,
+        "hashes": {
+            "app/console/commands/installfeaturescommand.php": "f228138b455e12e4f882337f7a6ebba414a4cd3ff29f9dfccc4563750013b1b0"
+        }
+    },
+    "app/Http/Controllers/Controller.php": {
+        "size": 77,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117801900124,
+        "word_count": 9,
+        "hashes": {
+            "app/http/controllers/controller.php": "8314f98de456bb7e5c6dae1d8aaf2e8e9318e33d6e6db462b99026cad9331d07"
+        }
+    },
+    "app/Http/Controllers/Settings/ProfileController.php": {
+        "size": 1606,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117802224626,
+        "word_count": 112,
+        "hashes": {
+            "app/http/controllers/settings/profilecontroller.php": "51250f88bdf37cbfa9846a583c939a67ad1759011f0bab25a0afce37bd13d970"
+        }
+    },
+    "app/Http/Controllers/Settings/SecurityController.php": {
+        "size": 2509,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117802531662,
+        "word_count": 153,
+        "hashes": {
+            "app/http/controllers/settings/securitycontroller.php": "cb8441cf6ec529908a24ac8ab4d1524eefaff437db8fc59349254935f72b574f"
+        }
+    },
+    "app/Http/Middleware/HandleAppearance.php": {
+        "size": 496,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117803004086,
+        "word_count": 43,
+        "hashes": {
+            "app/http/middleware/handleappearance.php": "357d53ada57515a5b86f1d79a8e57100503ca130ae725c1326241aaf53027561"
+        }
+    },
+    "app/Http/Middleware/HandleInertiaRequests.php": {
+        "size": 1123,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117803317262,
+        "word_count": 108,
+        "hashes": {
+            "app/http/middleware/handleinertiarequests.php": "8ec1de32a6810e74a1008d46267b4d334d22b4a8cbaf665f2da8104e49064c65"
+        }
+    },
+    "app/Http/Requests/Settings/PasswordUpdateRequest.php": {
+        "size": 608,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117803609844,
+        "word_count": 49,
+        "hashes": {
+            "app/http/requests/settings/passwordupdaterequest.php": "2e3ff2527565e9cac89575a0ba01f79c3a5548b95095cf8cc42d4f70b1e327b8"
+        }
+    },
+    "app/Http/Requests/Settings/ProfileDeleteRequest.php": {
+        "size": 549,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117803934953,
+        "word_count": 46,
+        "hashes": {
+            "app/http/requests/settings/profiledeleterequest.php": "702b3aac6f7ef48bd464db3fa8e2c2626707be2d8ec0488b35c595fac5598c0a"
+        }
+    },
+    "app/Http/Requests/Settings/ProfileUpdateRequest.php": {
+        "size": 517,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117804254506,
+        "word_count": 42,
+        "hashes": {
+            "app/http/requests/settings/profileupdaterequest.php": "87808f34827b2a9f0c575082d8c24eec9bd3470ec4cf49928650b66bc0502489"
+        }
+    },
+    "app/Http/Requests/Settings/TwoFactorAuthenticationRequest.php": {
+        "size": 504,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117804581515,
+        "word_count": 42,
+        "hashes": {
+            "app/http/requests/settings/twofactorauthenticationrequest.php": "8d051374462433ea153d91cb881a16aec227ab3575736ee147ec99fb3c53bc30"
+        }
+    },
+    "app/Models/User.php": {
+        "size": 1675,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117804882499,
+        "word_count": 137,
+        "hashes": {
+            "app/models/user.php": "2403cefb7041543fb816fe5a3d50460404729626b95a6df5c0aa91f4fd00b726"
+        }
+    },
+    "app/Providers/AppServiceProvider.php": {
+        "size": 1088,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117805205795,
+        "word_count": 81,
+        "hashes": {
+            "app/providers/appserviceprovider.php": "82a5ab0178469cec7d54940f38bff5ed4257b1ac1d54104191614d19d8ccd981"
+        }
+    },
+    "app/Providers/FortifyServiceProvider.php": {
+        "size": 3711,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117805506150,
+        "word_count": 244,
+        "hashes": {
+            "app/providers/fortifyserviceprovider.php": "6f08f9f101c3d81f054ae55bfcb9293ea27ec1933d47e6a383594fc9460050b4"
+        }
+    },
+    "artisan": {
+        "size": 425,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117805985717,
+        "word_count": 37,
+        "hashes": {
+            "artisan": "a0e2e37aedd026c95afd3ed256551996e3aa697ee5055fc42e8314fd5ad6db78"
+        }
+    },
+    "bootstrap/app.php": {
+        "size": 1085,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117806302414,
+        "word_count": 56,
+        "hashes": {
+            "bootstrap/app.php": "947b90703c9c1f17aa3110ddd776542a41ee2df08589e3121a5f33709becf04d"
+        }
+    },
+    "bootstrap/providers.php": {
+        "size": 166,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117806635462,
+        "word_count": 10,
+        "hashes": {
+            "bootstrap/providers.php": "592f09f415e99c449aa0f7ade67988e48d707c7b4f8aeeb93121f2f2ee9b63c8"
+        }
+    },
+    "chisel-paths.php": {
+        "size": 1195,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117806911806,
+        "word_count": 51,
+        "hashes": {
+            "chisel-paths.php": "7f801230f204d4c3b10acb43d5ef02ba03e889abd71a62b92d4a960c72e371fe"
+        }
+    },
+    "chisel.php": {
+        "size": 10785,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117807455202,
+        "word_count": 559,
+        "hashes": {
+            "chisel.php": "d6332b1386de54aa834afa08eb5d1d128fc70b0817e108cad49f3082ff829be8"
+        }
+    },
+    "components.json": {
+        "size": 492,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117807894247,
+        "word_count": 38,
+        "hashes": {
+            "components.json": "05c4d08076f4b0a804d475522d5516a294e21a46aa171020e9ef8048f0d48fd1"
+        }
+    },
+    "composer.json": {
+        "size": 3567,
+        "mtime_ns": 1793232854441818914,
+        "indexed_at_ns": 1793233117808296661,
+        "word_count": 244,
+        "hashes": {
+            "composer.json": "f48d13035d9af9b63c3e5293f8afa59095ba8cee5801fbc173d3665735de0877"
+        }
+    },
+    "config/app.php": {
+        "size": 4282,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117808797939,
+        "word_count": 437,
+        "hashes": {
+            "config/app.php": "5385795fabdc62099aadcb9a3fb92b457ca532d31c9f632657880015f063f145"
+        }
+    },
+    "config/auth.php": {
+        "size": 4040,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117809184012,
+        "word_count": 458,
+        "hashes": {
+            "config/auth.php": "6c1b6ff2f5a7beeb99905d84ebf8ef06cd207fab23f69d7875a596506d574cf8"
+        }
+    },
+    "config/cache.php": {
+        "size": 4370,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117809485821,
+        "word_count": 380,
+        "hashes": {
+            "config/cache.php": "791e50e938a243847fec89173bda15a95f47400d6be8558abba179b90bbd2109"
+        }
+    },
+    "config/database.php": {
+        "size": 6876,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117809752847,
+        "word_count": 587,
+        "hashes": {
+            "config/database.php": "f1da34ab8916a1ea3d294badf638bd5a5bc3f26ac2f1886c040a3cd7ef67b75a"
+        }
+    },
+    "config/filesystems.php": {
+        "size": 2541,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117810014576,
+        "word_count": 245,
+        "hashes": {
+            "config/filesystems.php": "a67c20eaffc4f805f9d1caabbb8c90812c1468fb91070c05f76475068802e7e2"
+        }
+    },
+    "config/fortify.php": {
+        "size": 6405,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117810283335,
+        "word_count": 653,
+        "hashes": {
+            "config/fortify.php": "b0cc028547770740774e5a391a284b89a998462ed8b104499610939b171b913c"
+        }
+    },
+    "config/inertia.php": {
+        "size": 1823,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117810546840,
+        "word_count": 174,
+        "hashes": {
+            "config/inertia.php": "37a26dc8e7231bb7cd601888a51f8bafd76f4dc50d185d1ab0bca6372abb61a3"
+        }
+    },
+    "config/logging.php": {
+        "size": 4606,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117810802565,
+        "word_count": 390,
+        "hashes": {
+            "config/logging.php": "2d7848dd5e59714560fbafa727b10dd8ff7b3711a481d42e672f6b40ed796b1e"
+        }
+    },
+    "config/mail.php": {
+        "size": 3631,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117811093213,
+        "word_count": 367,
+        "hashes": {
+            "config/mail.php": "a9ca462435e5448eb58ede285f5c79032d21262140dba0868310b0c5c087bf83"
+        }
+    },
+    "config/queue.php": {
+        "size": 4199,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117811371511,
+        "word_count": 384,
+        "hashes": {
+            "config/queue.php": "031cdca273390459d746f67f473abdac136d7845c2147e8d79db9400561ccc29"
+        }
+    },
+    "config/services.php": {
+        "size": 1039,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117811646749,
+        "word_count": 103,
+        "hashes": {
+            "config/services.php": "f685338518169ff0aee1097c4364c5890a07a8210b85671764f91607f1d29b16"
+        }
+    },
+    "config/session.php": {
+        "size": 8424,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117811914978,
+        "word_count": 878,
+        "hashes": {
+            "config/session.php": "e798a6a43e382cde25fb02b9b95cecfa496b4ee5bfbacb2a49b0c20eb7f16a59"
+        }
+    },
+    "database/factories/UserFactory.php": {
+        "size": 1695,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117812224747,
+        "word_count": 158,
+        "hashes": {
+            "database/factories/userfactory.php": "12edf84ebe802474dc9c6a508bbe02d0ccc3119f50dd132608112ccea894d90f"
+        }
+    },
+    "database/migrations/0001_01_01_000000_create_users_table.php": {
+        "size": 1473,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117812515982,
+        "word_count": 76,
+        "hashes": {
+            "database/migrations/0001_01_01_000000_create_users_table.php": "34722e64efe12043c563329da903b8f55aa79594609a07cf53aa2b2c22a410ea"
+        }
+    },
+    "database/migrations/0001_01_01_000001_create_cache_table.php": {
+        "size": 873,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117812798632,
+        "word_count": 58,
+        "hashes": {
+            "database/migrations/0001_01_01_000001_create_cache_table.php": "c5761fe01f93dbc1d9b2590c87e871d169e2fd0394dae9f83dc10368698b9546"
+        }
+    },
+    "database/migrations/0001_01_01_000002_create_jobs_table.php": {
+        "size": 1883,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117813214012,
+        "word_count": 86,
+        "hashes": {
+            "database/migrations/0001_01_01_000002_create_jobs_table.php": "b8f7becf81132fea0bbe5b48e4f8f9cae844ed8172f2b353637e765ca8f398b2"
+        }
+    },
+    "database/migrations/2024_01_01_000000_create_passkeys_table.php": {
+        "size": 838,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117813536337,
+        "word_count": 53,
+        "hashes": {
+            "database/migrations/2024_01_01_000000_create_passkeys_table.php": "2d646efaab0f7d3a43ea88fd272f530d25411972666d0cf06fc4a6148e0ac0e6"
+        }
+    },
+    "database/migrations/2025_08_14_170933_add_two_factor_columns_to_users_table.php": {
+        "size": 953,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117813851865,
+        "word_count": 58,
+        "hashes": {
+            "database/migrations/2025_08_14_170933_add_two_factor_columns_to_users_table.php": "3244338922ff433a6b5aff708104671f0de58a800afc6ef287cb85201fe598b7"
+        }
+    },
+    "database/seeders/DatabaseSeeder.php": {
+        "size": 482,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117814271544,
+        "word_count": 41,
+        "hashes": {
+            "database/seeders/databaseseeder.php": "40fa2c6472fa2b8c5e365ab433c67aed3cac1bc518091401ffbf87a4fa2170ba"
+        }
+    },
+    "package.json": {
+        "size": 2583,
+        "mtime_ns": 1793233082146535354,
+        "indexed_at_ns": 1793233117814680263,
+        "word_count": 153,
+        "hashes": {
+            "package.json": "d237c1a89f286950deddca9a060023fef96ac86156fa101e123eb53bf4b40de6"
+        }
+    },
+    "pint.json": {
+        "size": 28,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117814978641,
+        "word_count": 4,
+        "hashes": {
+            "pint.json": "82c2501373c024c55010f8bade07272155e9672d20c90b45414dfb1d78d29ad4"
+        }
+    },
+    "pnpm-workspace.yaml": {
+        "size": 65,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117815305739,
+        "word_count": 6,
+        "hashes": {
+            "pnpm-workspace.yaml": "22fd6ab92ac287b6b65a0df90a01fc0b8e61b9d331529603c0434d2437f79b61"
+        }
+    },
+    "public/favicon.svg": {
+        "size": 3545,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233118539155428,
+        "word_count": 319,
+        "hashes": {
+            "public/favicon.svg": "aef50fc56ce300c8adec809398897d43250b33f6914dfa5f22b505d0bd4cbe64"
+        }
+    },
+    "public/index.php": {
+        "size": 543,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117815739683,
+        "word_count": 48,
+        "hashes": {
+            "public/index.php": "61426476339597b8ae9c3d4d8c7671950d1e5786b482b086418aeff28aeae3c1"
+        }
+    },
+    "public/robots.txt": {
+        "size": 24,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233118538115189,
+        "word_count": 3,
+        "hashes": {
+            "public/robots.txt": "c5e037d90763f0649935d9813d58e232376eb1471b10b544be4c21a720936600"
+        }
+    },
+    "resources/js/app.tsx": {
+        "size": 1210,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117596697874,
+        "word_count": 112
+    },
+    "resources/js/components/alert-error.tsx": {
+        "size": 717,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117597045411,
+        "word_count": 57
+    },
+    "resources/js/components/app-content.tsx": {
+        "size": 598,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117597398613,
+        "word_count": 66
+    },
+    "resources/js/components/app-header.tsx": {
+        "size": 12275,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117597764544,
+        "word_count": 577
+    },
+    "resources/js/components/app-logo-icon.tsx": {
+        "size": 1012,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117598154996,
+        "word_count": 70
+    },
+    "resources/js/components/app-logo.tsx": {
+        "size": 690,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117598509199,
+        "word_count": 57
+    },
+    "resources/js/components/app-shell.tsx": {
+        "size": 603,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117598853255,
+        "word_count": 67
+    },
+    "resources/js/components/app-sidebar-header.tsx": {
+        "size": 722,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117599229913,
+        "word_count": 62
+    },
+    "resources/js/components/app-sidebar.tsx": {
+        "size": 1826,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117599624917,
+        "word_count": 138
+    },
+    "resources/js/components/appearance-tabs.tsx": {
+        "size": 1749,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117599990934,
+        "word_count": 159
+    },
+    "resources/js/components/breadcrumbs.tsx": {
+        "size": 1805,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117600356640,
+        "word_count": 100
+    },
+    "resources/js/components/delete-user.tsx": {
+        "size": 5330,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117600697415,
+        "word_count": 238
+    },
+    "resources/js/components/heading.tsx": {
+        "size": 696,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117601051203,
+        "word_count": 59
+    },
+    "resources/js/components/input-error.tsx": {
+        "size": 427,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117601401917,
+        "word_count": 47
+    },
+    "resources/js/components/manage-passkeys.tsx": {
+        "size": 2225,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117601741946,
+        "word_count": 187
+    },
+    "resources/js/components/manage-two-factor.tsx": {
+        "size": 4870,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117602085343,
+        "word_count": 299
+    },
+    "resources/js/components/nav-footer.tsx": {
+        "size": 1713,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117602443657,
+        "word_count": 92
+    },
+    "resources/js/components/nav-main.tsx": {
+        "size": 1239,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117602783250,
+        "word_count": 81
+    },
+    "resources/js/components/nav-user.tsx": {
+        "size": 2006,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117603120008,
+        "word_count": 124
+    },
+    "resources/js/components/passkey-item.tsx": {
+        "size": 3746,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117603471345,
+        "word_count": 234
+    },
+    "resources/js/components/passkey-register.tsx": {
+        "size": 3430,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117603817896,
+        "word_count": 307
+    },
+    "resources/js/components/passkey-verify.tsx": {
+        "size": 2303,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117604163987,
+        "word_count": 192
+    },
+    "resources/js/components/password-input.tsx": {
+        "size": 1337,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117604540213,
+        "word_count": 114
+    },
+    "resources/js/components/text-link.tsx": {
+        "size": 616,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117604970896,
+        "word_count": 57
+    },
+    "resources/js/components/two-factor-recovery-codes.tsx": {
+        "size": 7089,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117605362332,
+        "word_count": 374
+    },
+    "resources/js/components/two-factor-setup-modal.tsx": {
+        "size": 13015,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117605773284,
+        "word_count": 805
+    },
+    "resources/js/components/ui/alert.tsx": {
+        "size": 1629,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117606211331,
+        "word_count": 139
+    },
+    "resources/js/components/ui/avatar.tsx": {
+        "size": 1083,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117606586888,
+        "word_count": 93
+    },
+    "resources/js/components/ui/badge.tsx": {
+        "size": 1631,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117606981645,
+        "word_count": 133
+    },
+    "resources/js/components/ui/breadcrumb.tsx": {
+        "size": 2357,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117607479975,
+        "word_count": 199
+    },
+    "resources/js/components/ui/button.tsx": {
+        "size": 2019,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117608073033,
+        "word_count": 164
+    },
+    "resources/js/components/ui/card.tsx": {
+        "size": 1514,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117608706195,
+        "word_count": 140
+    },
+    "resources/js/components/ui/checkbox.tsx": {
+        "size": 1158,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117609122742,
+        "word_count": 80
+    },
+    "resources/js/components/ui/collapsible.tsx": {
+        "size": 786,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117609526495,
+        "word_count": 55
+    },
+    "resources/js/components/ui/dialog.tsx": {
+        "size": 3799,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117609903088,
+        "word_count": 273
+    },
+    "resources/js/components/ui/dropdown-menu.tsx": {
+        "size": 8118,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117610380474,
+        "word_count": 505
+    },
+    "resources/js/components/ui/icon.tsx": {
+        "size": 314,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117610930461,
+        "word_count": 37
+    },
+    "resources/js/components/ui/input-otp.tsx": {
+        "size": 2143,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117611561157,
+        "word_count": 198
+    },
+    "resources/js/components/ui/input.tsx": {
+        "size": 950,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117612010453,
+        "word_count": 70
+    },
+    "resources/js/components/ui/label.tsx": {
+        "size": 573,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117612388224,
+        "word_count": 49
+    },
+    "resources/js/components/ui/navigation-menu.tsx": {
+        "size": 6622,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117612756572,
+        "word_count": 373
+    },
+    "resources/js/components/ui/placeholder-pattern.tsx": {
+        "size": 628,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117613132050,
+        "word_count": 54
+    },
+    "resources/js/components/ui/select.tsx": {
+        "size": 6459,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117613532505,
+        "word_count": 404
+    },
+    "resources/js/components/ui/separator.tsx": {
+        "size": 690,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117613917702,
+        "word_count": 55
+    },
+    "resources/js/components/ui/sheet.tsx": {
+        "size": 4076,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117614310025,
+        "word_count": 311
+    },
+    "resources/js/components/ui/sidebar.tsx": {
+        "size": 21815,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117614723825,
+        "word_count": 1705
+    },
+    "resources/js/components/ui/skeleton.tsx": {
+        "size": 280,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117615217105,
+        "word_count": 29
+    },
+    "resources/js/components/ui/sonner.tsx": {
+        "size": 757,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117615591606,
+        "word_count": 62
+    },
+    "resources/js/components/ui/spinner.tsx": {
+        "size": 331,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117616018595,
+        "word_count": 35
+    },
+    "resources/js/components/ui/toggle-group.tsx": {
+        "size": 1898,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117616393229,
+        "word_count": 145
+    },
+    "resources/js/components/ui/toggle.tsx": {
+        "size": 1538,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117616939892,
+        "word_count": 125
+    },
+    "resources/js/components/ui/tooltip.tsx": {
+        "size": 1760,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117617593139,
+        "word_count": 125
+    },
+    "resources/js/components/user-info.tsx": {
+        "size": 1080,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117617967219,
+        "word_count": 84
+    },
+    "resources/js/components/user-menu-content.tsx": {
+        "size": 1992,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117618333602,
+        "word_count": 144
+    },
+    "resources/js/hooks/use-appearance.tsx": {
+        "size": 3162,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117618707269,
+        "word_count": 332
+    },
+    "resources/js/hooks/use-clipboard.ts": {
+        "size": 833,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117619113042,
+        "word_count": 80
+    },
+    "resources/js/hooks/use-current-url.ts": {
+        "size": 2423,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117619490289,
+        "word_count": 221
+    },
+    "resources/js/hooks/use-flash-toast.ts": {
+        "size": 530,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117619838672,
+        "word_count": 62
+    },
+    "resources/js/hooks/use-initials.tsx": {
+        "size": 715,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117620187836,
+        "word_count": 70
+    },
+    "resources/js/hooks/use-mobile-navigation.ts": {
+        "size": 285,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117620553021,
+        "word_count": 32
+    },
+    "resources/js/hooks/use-mobile.tsx": {
+        "size": 788,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117620914166,
+        "word_count": 77
+    },
+    "resources/js/hooks/use-two-factor-auth.ts": {
+        "size": 3329,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117621255490,
+        "word_count": 310
+    },
+    "resources/js/layouts/app-layout.tsx": {
+        "size": 391,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117621600946,
+        "word_count": 35
+    },
+    "resources/js/layouts/app/app-header-layout.tsx": {
+        "size": 496,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117621958720,
+        "word_count": 46
+    },
+    "resources/js/layouts/app/app-sidebar-layout.tsx": {
+        "size": 678,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117622329848,
+        "word_count": 60
+    },
+    "resources/js/layouts/auth-layout.tsx": {
+        "size": 389,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117622762825,
+        "word_count": 34
+    },
+    "resources/js/layouts/auth/auth-card-layout.tsx": {
+        "size": 1649,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117623155871,
+        "word_count": 116
+    },
+    "resources/js/layouts/auth/auth-simple-layout.tsx": {
+        "size": 1583,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117623767160,
+        "word_count": 103
+    },
+    "resources/js/layouts/auth/auth-split-layout.tsx": {
+        "size": 1866,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117624415552,
+        "word_count": 138
+    },
+    "resources/js/layouts/settings/layout.tsx": {
+        "size": 2708,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117624919792,
+        "word_count": 194
+    },
+    "resources/js/lib/utils.ts": {
+        "size": 383,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117625288113,
+        "word_count": 50
+    },
+    "resources/js/pages/auth/confirm-password.tsx": {
+        "size": 2586,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117625676456,
+        "word_count": 165
+    },
+    "resources/js/pages/auth/forgot-password.tsx": {
+        "size": 2673,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117626053095,
+        "word_count": 173
+    },
+    "resources/js/pages/auth/login.tsx": {
+        "size": 5036,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117626439591,
+        "word_count": 277
+    },
+    "resources/js/pages/auth/register.tsx": {
+        "size": 5094,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117626813101,
+        "word_count": 229
+    },
+    "resources/js/pages/auth/reset-password.tsx": {
+        "size": 3797,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117627195917,
+        "word_count": 193
+    },
+    "resources/js/pages/auth/two-factor-challenge.tsx": {
+        "size": 5756,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117627572733,
+        "word_count": 292
+    },
+    "resources/js/pages/auth/verify-email.tsx": {
+        "size": 1589,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117627946830,
+        "word_count": 142
+    },
+    "resources/js/pages/dashboard.tsx": {
+        "size": 1863,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117628298490,
+        "word_count": 127
+    },
+    "resources/js/pages/settings/appearance.tsx": {
+        "size": 858,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117628661610,
+        "word_count": 71
+    },
+    "resources/js/pages/settings/profile.tsx": {
+        "size": 5813,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117629025471,
+        "word_count": 302
+    },
+    "resources/js/pages/settings/security.tsx": {
+        "size": 6116,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117629410221,
+        "word_count": 309
+    },
+    "resources/js/pages/welcome.tsx": {
+        "size": 42185,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117629777754,
+        "word_count": 2942
+    },
+    "resources/js/types/auth.ts": {
+        "size": 723,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117630327569,
+        "word_count": 91
+    },
+    "resources/js/types/global.d.ts": {
+        "size": 386,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117630714860,
+        "word_count": 40
+    },
+    "resources/js/types/index.ts": {
+        "size": 91,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117631070386,
+        "word_count": 15
+    },
+    "resources/js/types/navigation.ts": {
+        "size": 359,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117631450221,
+        "word_count": 40
+    },
+    "resources/js/types/ui.ts": {
+        "size": 473,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117631805207,
+        "word_count": 61
+    },
+    "resources/js/types/vite-env.d.ts": {
+        "size": 38,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117632384580,
+        "word_count": 4
+    },
+    "resources/views/app.blade.php": {
+        "size": 1659,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117817006879,
+        "word_count": 127,
+        "hashes": {
+            "resources/views/app.blade.php": "8ff0367fdbde77ff45c26c648558d4dcfa4cd40bde45cd6c42cd559d39b03b77"
+        }
+    },
+    "routes/console.php": {
+        "size": 210,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117817473377,
+        "word_count": 14,
+        "hashes": {
+            "routes/console.php": "c35c7307b33296adcf871e030dc95ca1d919318ad1df6f99d3ece628208bcf41"
+        }
+    },
+    "routes/settings.php": {
+        "size": 1505,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117817915238,
+        "word_count": 73,
+        "hashes": {
+            "routes/settings.php": "209acb9ab02bd11e90b7cf5b3a0cbb5418dee8f4661bd0e8e0e493505248a78e"
+        }
+    },
+    "routes/web.php": {
+        "size": 257,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117818356499,
+        "word_count": 14,
+        "hashes": {
+            "routes/web.php": "b4680cdf46343fa8cbaa19dd34929040aa4f04a24ec631e71b72cca316a7a964"
+        }
+    },
+    "tests/Feature/Auth/AuthenticationTest.php": {
+        "size": 2471,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117818658515,
+        "word_count": 147,
+        "hashes": {
+            "tests/feature/auth/authenticationtest.php": "ba108df3469d70bd3ebaa18bd9123b127a6e2d7b26fdfe35505282f35ef6b4f6"
+        }
+    },
+    "tests/Feature/Auth/EmailVerificationTest.php": {
+        "size": 3774,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117819002687,
+        "word_count": 181,
+        "hashes": {
+            "tests/feature/auth/emailverificationtest.php": "9b58220a67e0ff935f32d3471c420128d8ceafb83c6df0edcf3805a1ff80628c"
+        }
+    },
+    "tests/Feature/Auth/PasswordConfirmationTest.php": {
+        "size": 808,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117819389215,
+        "word_count": 49,
+        "hashes": {
+            "tests/feature/auth/passwordconfirmationtest.php": "b038558e8503f7c5dbdc55c1957e2af52c73079f64b584a5dc23b55918cf23c3"
+        }
+    },
+    "tests/Feature/Auth/PasswordResetTest.php": {
+        "size": 2597,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117819722444,
+        "word_count": 151,
+        "hashes": {
+            "tests/feature/auth/passwordresettest.php": "f3e9afe82e66665c0e1033f4af66d7650c206e1f6513269a85dd64d411c47ce0"
+        }
+    },
+    "tests/Feature/Auth/RegistrationTest.php": {
+        "size": 919,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117820056833,
+        "word_count": 61,
+        "hashes": {
+            "tests/feature/auth/registrationtest.php": "09188d629c6397a39719109f51b680fb4ee3a45bc0f81017d4a62139dce6d18d"
+        }
+    },
+    "tests/Feature/Auth/TwoFactorChallengeTest.php": {
+        "size": 1251,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117820380955,
+        "word_count": 76,
+        "hashes": {
+            "tests/feature/auth/twofactorchallengetest.php": "c6805abdd81af3cff2984186ede765a0b2656a30303d0be004033ffd47a6ddb4"
+        }
+    },
+    "tests/Feature/Auth/VerificationNotificationTest.php": {
+        "size": 1203,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117820699733,
+        "word_count": 62,
+        "hashes": {
+            "tests/feature/auth/verificationnotificationtest.php": "2c425ada2e849450ecc863fa2342783d6f7b6377c7f1072ef113724d785129cd"
+        }
+    },
+    "tests/Feature/DashboardTest.php": {
+        "size": 618,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117820990966,
+        "word_count": 39,
+        "hashes": {
+            "tests/feature/dashboardtest.php": "c4c6594246057f091755f2a7db8888b103bcbb7f5fc8f8e70d6426b063b27023"
+        }
+    },
+    "tests/Feature/ExampleTest.php": {
+        "size": 318,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117821435463,
+        "word_count": 24,
+        "hashes": {
+            "tests/feature/exampletest.php": "e5d8eabb464ec52c32f7670d7a5380ab752157d55bea320d25f879686216930d"
+        }
+    },
+    "tests/Feature/Settings/ProfileUpdateTest.php": {
+        "size": 2587,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117821743914,
+        "word_count": 135,
+        "hashes": {
+            "tests/feature/settings/profileupdatetest.php": "fd0f2cd610a6c9ae4b375f5169c38b72e8a6745288124f097fc6fabd2739cfe8"
+        }
+    },
+    "tests/Feature/Settings/SecurityTest.php": {
+        "size": 4190,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117822021528,
+        "word_count": 216,
+        "hashes": {
+            "tests/feature/settings/securitytest.php": "fff0e7ba08691c3c7d4dea887e0215440c0b546c9876c6ef2442da2ca07867ae"
+        }
+    },
+    "tests/TestCase.php": {
+        "size": 420,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117822288325,
+        "word_count": 40,
+        "hashes": {
+            "tests/testcase.php": "8f9ec3fd318e011b4285a49c1c5f850fd88a77d7addab6df59317b84aa7fcde2"
+        }
+    },
+    "tests/Unit/ExampleTest.php": {
+        "size": 257,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117822670994,
+        "word_count": 21,
+        "hashes": {
+            "tests/unit/exampletest.php": "00ce8af0c84b6f53a56a039632747ada723764c705a817d4ed68506db6692be4"
+        }
+    },
+    "tsconfig.json": {
+        "size": 12891,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117822950458,
+        "word_count": 1455,
+        "hashes": {
+            "tsconfig.json": "102168bc2b5c18f32731ce0150a24b4291e172a5d6b945ca9ebb1ba6389d0b8e"
+        }
+    },
+    "vite.config.ts": {
+        "size": 2153,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233117644412906,
+        "word_count": 147
+    },
+    "public/apple-touch-icon.png": {
+        "size": 1662,
+        "mtime_ns": 1793190263000000000,
+        "indexed_at_ns": 1793233118538346545,
+        "hashes": {
+            "public/apple-touch-icon.png": "931f506542f7f2d4fdcda759f6708bb6c71f097505d27cfee371f18723e79a08"
+        }
+    }
+}
