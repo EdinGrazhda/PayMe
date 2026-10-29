@@ -13,6 +13,17 @@
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 
+    --color-payme-canvas: #faf8f2;
+    --color-payme-paper: #ffffff;
+    --color-payme-ink: #101714;
+    --color-payme-primary: #126044;
+    --color-payme-deep: #0c4a36;
+    --color-payme-success: #176246;
+    --color-payme-mist: #f5f6f1;
+    --color-payme-sage: #e9f3eb;
+    --color-payme-border: #dfe5df;
+    --color-payme-muted: #667069;
+
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);
@@ -139,5 +150,69 @@
 
     body {
         @apply bg-background text-foreground;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    ::selection {
+        background: #bfe3cd;
+        color: #0c4a36;
+    }
+}
+
+.payme-progress {
+    appearance: none;
+    border: 0;
+    background: #2d6a53;
+}
+
+.payme-progress::-webkit-progress-bar {
+    border-radius: 999px;
+    background: #2d6a53;
+}
+
+.payme-progress::-webkit-progress-value {
+    border-radius: 999px;
+    background: #a9dfc2;
+}
+
+.payme-progress::-moz-progress-bar {
+    border-radius: 999px;
+    background: #a9dfc2;
+}
+
+@keyframes payme-success-pop {
+    0% {
+        transform: scale(0.72);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.payme-success-pop {
+    animation: payme-success-pop 420ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
     }
 }
