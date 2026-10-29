@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" @class(['dark' => ($appearance ?? 'system') == 'dark'])>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" @class(['dark' => ($appearance ?? 'light') == 'dark'])>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
             (function() {
-                const appearance = '{{ $appearance ?? "system" }}';
+                const defaultVersion = 'payme-light-default-v1';
+                const serverAppearance = @js($appearance ?? 'light');
+                const storedAppearance = localStorage.getItem('appearance');
+                const hasLightDefault = localStorage.getItem(defaultVersion);
+                let appearance = storedAppearance || serverAppearance || 'light';
 
-                if (appearance === 'system') {
-                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (!storedAppearance || (!hasLightDefault && appearance === 'system')) {
+                    appearance = 'light';
+                    localStorage.setItem('appearance', 'light');
+                    document.cookie = 'appearance=light;path=/;max-age=31536000;SameSite=Lax';
+                }
 
-                    if (prefersDark) {
-                        document.documentElement.classList.add('dark');
-                    }
+                localStorage.setItem(defaultVersion, 'true');
+
+                const isDark = appearance === 'dark'
+                    || (appearance === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+                if (isDark) {
+                    document.documentElement.classList.add('dark');
+                    document.documentElement.style.colorScheme = 'dark';
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    document.documentElement.style.colorScheme = 'light';
                 }
             })();
         </script>
@@ -22,11 +38,11 @@
         {{-- Inline style to set the HTML background color based on our theme in app.css --}}
         <style>
             html {
-                background-color: oklch(1 0 0);
+                background-color: #fbfaf7;
             }
 
             html.dark {
-                background-color: oklch(0.145 0 0);
+                background-color: #0f1713;
             }
         </style>
 
