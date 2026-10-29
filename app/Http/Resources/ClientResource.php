@@ -18,7 +18,11 @@ class ClientResource extends JsonResource
             'company' => $this->company,
             'email' => $this->email,
             'phone' => $this->phone,
+            'address' => $this->address,
+            'country' => $this->country,
             'currency' => $this->currency,
+            'notes' => $this->notes,
+            'created_at' => $this->created_at?->toIso8601String(),
         ];
     }
 }

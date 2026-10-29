@@ -31,22 +31,22 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'Invoices',
-        href: '/dashboard#recent-invoices',
+        href: '/invoices',
         icon: FileText,
     },
     {
         title: 'Clients',
-        href: '/dashboard#needs-attention',
+        href: '/clients',
         icon: Users,
     },
     {
         title: 'Reminders',
-        href: '/dashboard#needs-attention',
+        href: '/reminders',
         icon: Bell,
     },
     {
         title: 'Analytics',
-        href: '/dashboard#metrics',
+        href: '/analytics',
         icon: ChartNoAxesColumn,
     },
 ];

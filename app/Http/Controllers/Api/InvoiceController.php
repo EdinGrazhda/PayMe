@@ -17,8 +17,9 @@ class InvoiceController extends Controller
     {
         $business = $context->forUser($request->user());
         $filters = $request->validate([
-            'status' => ['sometimes', 'in:draft,sent,due_soon,overdue,paid,cancelled'],
+            'status' => ['sometimes', 'in:draft,sent,due_soon,overdue,paid,cancelled,outstanding'],
             'client_id' => ['sometimes', 'integer'],
+            'q' => ['sometimes', 'string', 'max:100'],
         ]);
 
         $query = $business->invoices()->with('client:id,name,company,email');
@@ -27,10 +28,19 @@ class InvoiceController extends Controller
             $query->where('client_id', $filters['client_id']);
         }
 
+        if (isset($filters['q'])) {
+            $term = addcslashes($filters['q'], '%_\\').'%';
+            $query->where(function ($query) use ($term): void {
+                $query->where('invoice_number', 'like', $term)
+                    ->orWhereHas('client', fn ($client) => $client->where('name', 'like', $term)->orWhere('company', 'like', $term));
+            });
+        }
+
         if (isset($filters['status'])) {
             match ($filters['status']) {
                 'overdue' => $query->where('status', 'sent')->where('due_date', '<', now()->toDateString()),
                 'due_soon' => $query->where('status', 'sent')->whereBetween('due_date', [now()->toDateString(), now()->addDays(7)->toDateString()]),
+                'outstanding' => $query->where('status', 'sent')->where('balance_due_minor', '>', 0),
                 default => $query->where('status', $filters['status']),
             };
         }
@@ -55,7 +65,7 @@ class InvoiceController extends Controller
         $business = $context->forUser($request->user());
         abort_unless($invoice->business_id === $business->id, 404);
 
-        return new InvoiceResource($invoice->load(['client', 'items']));
+        return new InvoiceResource($invoice->load(['client', 'items', 'payments', 'events']));
     }
 
     public function markSent(Request $request, Invoice $invoice, BusinessContext $context, InvoiceService $invoices): InvoiceResource

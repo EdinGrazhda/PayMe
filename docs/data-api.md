@@ -65,10 +65,16 @@ be added later without changing the domain services.
 | --- | --- | --- |
 | GET | `/api/dashboard` | Currency-safe metrics and bounded dashboard rows |
 | GET / POST | `/api/clients` | Cursor-paginated list / create client |
+| GET / PATCH / DELETE | `/api/clients/{client}` | Tenant-scoped client detail, update, delete (only without invoices) |
 | GET / POST | `/api/invoices` | Cursor-paginated filtered list / create draft |
 | GET | `/api/invoices/{invoice}` | Tenant-scoped invoice detail |
 | PATCH | `/api/invoices/{invoice}/send` | Mark a draft as sent and start tracking |
 | POST | `/api/invoices/{invoice}/payments` | Record a payment; empty body pays the full balance |
+| PATCH | `/api/invoices/{invoice}/reminders` | Enable or pause reminders for a sent invoice |
+| GET | `/api/reminders` | Cursor-paginated reminder activity |
+| PATCH | `/api/reminders/{reminder}/skip` | Skip a pending reminder |
+| GET / PATCH | `/api/reminder-rules[/{rule}]` | Read and edit reminder steps |
+| GET | `/api/analytics` | Currency-safe collection totals, six-month payments, aging buckets |
 | POST | `/api/uploaded-documents` | Stage a private PDF, JPEG, or PNG for confirmation |
 
 `InvoiceResource` and `ClientResource` define the JSON contract. Validation
@@ -83,8 +89,11 @@ payment cancels both scheduled and queued reminders immediately and disables
 further reminders on the invoice. Partial payments remain supported by the
 ledger and balance columns.
 
-The reminder rules, reminder queue records, event log, document staging,
-plans, and subscriptions have schema now. Actual queued delivery, uploaded
+The Invoices, Clients, Reminders, and Analytics sidebar pages use these APIs.
+Reminder rule editing, per-invoice scheduling, pausing, and skipping are live;
+scheduled records are not emailed until a delivery worker is implemented.
+The reminder queue records, event log, document staging, plans, and subscriptions
+have schema now. Actual queued delivery, uploaded
 document confirmation/extraction, PDF/public invoice delivery, and subscription
 enforcement are not activated by this data/API phase. Before delivery is
 enabled, a queued job must lock and check the invoice immediately before send

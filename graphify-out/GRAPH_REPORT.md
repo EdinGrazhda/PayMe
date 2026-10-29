@@ -1,23 +1,23 @@
 # Graph Report - PayMe  (2026-10-29)
 
 ## Corpus Check
-- 315 files · ~131,775 words
+- 328 files · ~136,714 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 58 file(s) not represented in the graph (top: .csv 35, (none) 18, .example 1)
 
 ## Summary
-- 2391 nodes · 4037 edges · 217 communities (176 shown, 41 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 45 edges (avg confidence: 0.87)
+- 2474 nodes · 4344 edges · 215 communities (177 shown, 38 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 58 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a2f87968`
+- Built from commit: `0467b3d1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Button
-- PasswordValidationRules
+- invoices.tsx
 - FortifyServiceProvider.php
 - Laravel 13 Best Practices - Complete Guide
 - index.ts
@@ -76,16 +76,16 @@
 - delete-user.tsx
 - Quick Reference
 - test_design_system_mode.py
-- package.json
+- @inertiajs/react@^3.0.0
 - test_core.py
 - FortifyServiceProvider
 - Design System Master File
 - BM25
 - UI/UX Pro Max - Design Intelligence
 - Categories
-- ProfileController.php
+- Illuminate\Foundation\Http\FormRequest
 - Categories
-- ProfileValidationRules
+- Illuminate\Foundation\Testing\RefreshDatabase
 - AppHeader
 - metadata.json
 - Good Example
@@ -94,19 +94,20 @@
 - Categories
 - Pre-Delivery Checklist (canonical — the only one)
 - Quick Reference
-- app.tsx
+- auth.ts
 - Sections
 - Form useForm Hook
 - Correct
 - Section Overview
 - React Implementation
 - PayMe landing page — design QA
-- Illuminate\Foundation\Http\FormRequest
+- .store
 - Sections
 - _palette_is_dark
 - validate_data.py
 - InvoiceApiTest.php
 - arch-service-classes.md
+- Laravel\Fortify\Features
 - Good Example
 - Good Example
 - Good Example
@@ -198,7 +199,7 @@
 - migrate-zero-downtime.md
 - naming-columns.md
 - naming-migrations.md
-- DashboardService.php
+- .users
 - naming-tables.md
 - query-auto-eager-loading.md
 - query-eager-loading.md
@@ -207,13 +208,11 @@
 - priority
 - Categories
 - Overview
-- @radix-ui/react-label
-- ProfileValidationRules
-- @radix-ui/react-navigation-menu
-- FortifyServiceProvider
-- react@^19.2.0
-- profile.tsx
-- @radix-ui/react-checkbox
+- VerificationNotificationTest.php
+- ProfileUpdateTest
+- @radix-ui/react-tooltip
+- tailwindcss@^4.0.0
+- @types/react@^19.2.0
 - @radix-ui/react-collapsible
 - @radix-ui/react-dialog
 - @radix-ui/react-separator
@@ -224,13 +223,13 @@
 1. `Laravel 13 Best Practices - Complete Guide` - 141 edges
 2. `cn()` - 135 edges
 3. `Sections` - 109 edges
-4. `Button()` - 46 edges
-5. `lucide-react` - 38 edges
-6. `User` - 36 edges
-7. `TestCase` - 31 edges
-8. `AppHeader()` - 30 edges
-9. `InputError()` - 26 edges
-10. `Container()` - 26 edges
+4. `Button()` - 52 edges
+5. `User` - 40 edges
+6. `lucide-react` - 40 edges
+7. `TestCase` - 33 edges
+8. `Invoice` - 30 edges
+9. `BusinessContext` - 30 edges
+10. `AppHeader()` - 30 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Interaction (App)` --references--> `Button()`  [INFERRED]
@@ -239,23 +238,23 @@
   docs/data-api.md → app/Http/Resources/InvoiceResource.php
 - `Authenticated JSON API` --references--> `ClientResource`  [INFERRED]
   docs/data-api.md → app/Http/Resources/ClientResource.php
-- `{closure#1}()` --references--> `User`  [EXTRACTED]
-  app/Actions/Fortify/CreateNewUser.php → app/Models/User.php
 - `{closure#1}()` --calls--> `ClientResource`  [INFERRED]
   app/Http/Resources/InvoiceResource.php → app/Http/Resources/ClientResource.php
+- `BreadcrumbEllipsis()` --calls--> `cn()`  [EXTRACTED]
+  resources/js/components/ui/breadcrumb.tsx → resources/js/lib/utils.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (217 total, 41 thin omitted)
+## Communities (215 total, 38 thin omitted)
 
 ### Community 0 - "Button"
-Cohesion: 0.12
-Nodes (25): @laravel/passkeys, InputError(), PasskeyRegistration(), Props, PasskeyVerify(), Props, PasswordInput(), Props (+17 more)
+Cohesion: 0.11
+Nodes (21): InputError(), PasskeyVerify(), Props, PasswordInput(), Props, TextLink(), Checkbox(), Input() (+13 more)
 
-### Community 1 - "PasswordValidationRules"
-Cohesion: 0.27
-Nodes (3): PasswordValidationRules, PasswordUpdateRequest, ProfileDeleteRequest
+### Community 1 - "invoices.tsx"
+Cohesion: 0.14
+Nodes (34): sonner, EmptyState(), fieldClass, PaymeCard(), PaymePage(), primaryClass, DialogHeader(), apiRequest() (+26 more)
 
 ### Community 2 - "FortifyServiceProvider.php"
 Cohesion: 0.08
@@ -266,36 +265,36 @@ Cohesion: 0.01
 Nodes (136): 1. Architecture & Structure (CRITICAL), 2. Eloquent & Database (CRITICAL), 3. Controllers & Routing (HIGH), 4. Validation & Requests (HIGH), 5. Security (HIGH), 6. Performance (MEDIUM), 7. API Design (MEDIUM), API Resources for Response Transformation (+128 more)
 
 ### Community 4 - "index.ts"
-Cohesion: 0.20
-Nodes (14): AppContent(), Props, AppShell(), Props, AppSidebarHeader(), SidebarInset(), SidebarProvider(), SidebarTrigger() (+6 more)
+Cohesion: 0.21
+Nodes (13): AppContent(), Props, AppShell(), Props, AppSidebarHeader(), SidebarInset(), SidebarProvider(), SidebarTrigger() (+5 more)
 
 ### Community 5 - "dropdown-menu.tsx"
-Cohesion: 0.13
-Nodes (13): DropdownMenuCheckboxItem(), DropdownMenuGroup(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem(), DropdownMenuSeparator(), DropdownMenuShortcut(), DropdownMenuSubContent() (+5 more)
+Cohesion: 0.12
+Nodes (22): NavUser(), DropdownMenu(), DropdownMenuCheckboxItem(), DropdownMenuContent(), DropdownMenuGroup(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem() (+14 more)
 
 ### Community 6 - "use-appearance.tsx"
-Cohesion: 0.17
-Nodes (19): sonner@^2.0.0, sonner, Toaster(), Appearance, applyTheme(), getStoredAppearance(), handleSystemThemeChange(), initializeTheme() (+11 more)
+Cohesion: 0.15
+Nodes (22): withApp(), AppearanceToggleTab(), Toaster(), TooltipProvider(), Appearance, applyTheme(), getStoredAppearance(), handleSystemThemeChange() (+14 more)
 
 ### Community 7 - "two-factor-recovery-codes.tsx"
-Cohesion: 0.25
-Nodes (14): AlertError(), Props, TwoFactorRecoveryCodes(), Alert(), AlertDescription(), AlertTitle(), alertVariants, Card() (+6 more)
+Cohesion: 0.16
+Nodes (19): AlertError(), AppLogoIcon(), Props, TwoFactorRecoveryCodes(), Alert(), AlertDescription(), AlertTitle(), alertVariants (+11 more)
 
 ### Community 8 - "user-info.tsx"
-Cohesion: 0.40
-Nodes (7): Avatar(), AvatarFallback(), AvatarImage(), UserInfo(), getInitial(), GetInitialsFn, useInitials()
+Cohesion: 0.25
+Nodes (14): AppHeader(), mainNavItems, Props, rightNavItems, Avatar(), AvatarFallback(), AvatarImage(), Tooltip() (+6 more)
 
 ### Community 9 - "dependencies"
-Cohesion: 0.08
-Nodes (26): dependencies, clsx@^2.1.1, input-otp@^1.4.2, @laravel/passkeys@^0.2.0, lucide-react@^0.475.0, @radix-ui/react-avatar@^1.1.3, @radix-ui/react-dropdown-menu@^2.1.6, @radix-ui/react-select@^2.1.6 (+18 more)
+Cohesion: 0.06
+Nodes (31): dependencies, clsx@^2.1.1, concurrently@^10.0.3, input-otp@^1.4.2, @laravel/passkeys@^0.2.0, lucide-react@^0.475.0, @radix-ui/react-avatar@^1.1.3, @radix-ui/react-checkbox@^1.1.4 (+23 more)
 
 ### Community 10 - "Illuminate\Database\Schema\Blueprint"
 Cohesion: 0.06
 Nodes (25): {closure#1}(), {closure#2}(), {closure#3}(), {closure#1}(), {closure#2}(), {closure#1}(), {closure#2}(), {closure#3}() (+17 more)
 
 ### Community 11 - "cn"
-Cohesion: 0.11
-Nodes (22): lucide-react, AppearanceToggleTab(), IconProps, NavigationMenu(), NavigationMenuContent(), NavigationMenuIndicator(), NavigationMenuItem(), NavigationMenuLink() (+14 more)
+Cohesion: 0.13
+Nodes (21): Badge(), badgeVariants, NavigationMenu(), NavigationMenuContent(), NavigationMenuIndicator(), NavigationMenuItem(), NavigationMenuLink(), NavigationMenuList() (+13 more)
 
 ### Community 12 - "engines"
 Cohesion: 0.67
@@ -304,10 +303,6 @@ Nodes (3): engines, node, npm
 ### Community 13 - "with"
 Cohesion: 0.10
 Nodes (20): runs-on, steps, jobs, ci, name, on, pull_request, push (+12 more)
-
-### Community 14 - "TestCase"
-Cohesion: 0.12
-Nodes (6): RegistrationTest, DashboardTest, ExampleTest, ProfileUpdateTest, TestCase, ExampleTest
 
 ### Community 15 - "vite.config.ts"
 Cohesion: 0.11
@@ -322,15 +317,19 @@ Cohesion: 0.12
 Nodes (15): compilerOptions, allowJs, esModuleInterop, forceConsistentCasingInFileNames, isolatedModules, jsx, module, moduleResolution (+7 more)
 
 ### Community 19 - "optionalDependencies"
-Cohesion: 0.13
-Nodes (15): optionalDependencies, @laravel/multiplex@^0.4.1, lightningcss-linux-x64-gnu@^1.29.1, lightningcss-win32-x64-msvc@^1.29.1, @rollup/rollup-linux-x64-gnu@4.9.5, @rollup/rollup-win32-x64-msvc@4.9.5, @tailwindcss/oxide-linux-x64-gnu@^4.0.1, @tailwindcss/oxide-win32-x64-msvc@^4.0.1 (+7 more)
+Cohesion: 0.12
+Nodes (21): optionalDependencies, @laravel/multiplex@^0.4.1, lightningcss-linux-x64-gnu@^1.29.1, lightningcss-win32-x64-msvc@^1.29.1, @rollup/rollup-linux-x64-gnu@4.9.5, @rollup/rollup-win32-x64-msvc@4.9.5, @tailwindcss/oxide-linux-x64-gnu@^4.0.1, @tailwindcss/oxide-win32-x64-msvc@^4.0.1 (+13 more)
+
+### Community 20 - "User"
+Cohesion: 0.10
+Nodes (5): {closure#1}(), CreateNewUser, ResetUserPassword, ProfileValidationRules, User
 
 ### Community 21 - "breadcrumbs.tsx"
-Cohesion: 0.44
-Nodes (8): Breadcrumbs(), Breadcrumb(), BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage(), BreadcrumbSeparator()
+Cohesion: 0.33
+Nodes (10): @radix-ui/react-slot@^1.2.3, @radix-ui/react-slot, Breadcrumbs(), Breadcrumb(), BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList() (+2 more)
 
 ### Community 22 - "layout.tsx"
-Cohesion: 0.25
+Cohesion: 0.17
 Nodes (10): Separator(), SidebarSeparator(), IsCurrentOrParentUrlFn, IsCurrentUrlFn, useCurrentUrl(), UseCurrentUrlReturn, WhenCurrentUrlFn, SettingsLayout() (+2 more)
 
 ### Community 23 - "scripts"
@@ -342,8 +341,8 @@ Cohesion: 0.18
 Nodes (7): {closure#1}(), PasswordConfirmationTest, {closure#1}(), {closure#1}(), LandingPageTest, {closure#1}(), {closure#2}()
 
 ### Community 26 - "toggle-group.tsx"
-Cohesion: 0.18
-Nodes (10): class-variance-authority@^0.7.1, class-variance-authority, Badge(), badgeVariants, PlaceholderPatternProps, ToggleGroup(), ToggleGroupContext, ToggleGroupItem() (+2 more)
+Cohesion: 0.21
+Nodes (11): class-variance-authority@^0.7.1, @radix-ui/react-toggle@^1.1.2, @radix-ui/react-toggle-group@^1.1.2, class-variance-authority, @radix-ui/react-toggle, @radix-ui/react-toggle-group, ToggleGroup(), ToggleGroupContext (+3 more)
 
 ### Community 27 - "composer.json"
 Cohesion: 0.17
@@ -354,7 +353,7 @@ Cohesion: 0.17
 Nodes (11): default-days, patterns, github-actions, interval, updates, cooldown, directory, groups (+3 more)
 
 ### Community 29 - "Illuminate\Database\Eloquent\Model"
-Cohesion: 0.08
+Cohesion: 0.07
 Nodes (9): Client, InvoiceEvent, InvoiceItem, InvoiceReminder, Payment, Plan, ReminderRule, Subscription (+1 more)
 
 ### Community 30 - "Sections"
@@ -362,8 +361,8 @@ Cohesion: 0.02
 Nodes (108): 1. Query Performance & N+1 (query), 2. Indexing Strategies (index), 3. Eloquent Optimization (eloquent), 4. Caching with Redis (cache), 5. Pagination & Large Datasets (data), 6. Transactions & Locking (lock), 7. Migrations (migrate), 8. Query Debugging (debug) (+100 more)
 
 ### Community 31 - "lucide-react"
-Cohesion: 0.09
-Nodes (45): faqs, FaqSection(), FinalCta(), Footer(), plans, PricingSection(), RoiCalculator(), SecuritySection() (+37 more)
+Cohesion: 0.10
+Nodes (42): lucide-react, faqs, FaqSection(), FinalCta(), Footer(), plans, PricingSection(), RoiCalculator() (+34 more)
 
 ### Community 32 - "require-dev"
 Cohesion: 0.18
@@ -374,8 +373,8 @@ Cohesion: 0.20
 Nodes (10): require, inertiajs/inertia-laravel, laravel/ai, laravel/chisel, laravel/fortify, laravel/framework, laravel/sanctum, laravel/tinker (+2 more)
 
 ### Community 35 - "BusinessContext"
-Cohesion: 0.13
-Nodes (10): ClientController, DashboardController, InvoiceController, PaymentController, UploadedDocumentController, Controller, InvoiceResource, BusinessContext (+2 more)
+Cohesion: 0.09
+Nodes (15): AnalyticsController, ClientController, DashboardController, InvoiceController, ReminderController, UploadedDocumentController, Controller, StoreClientRequest (+7 more)
 
 ### Community 36 - "config"
 Cohesion: 0.29
@@ -386,8 +385,8 @@ Cohesion: 0.29
 Nodes (7): scripts, build, build:ssr, check, check:fix, dev, types:check
 
 ### Community 39 - "Invoice"
-Cohesion: 0.19
-Nodes (6): Business, Invoice, {closure#1}(), {closure#1}(), {closure#2}(), {closure#1}()
+Cohesion: 0.13
+Nodes (9): Business, Invoice, AnalyticsService, {closure#1}(), {closure#1}(), {closure#2}(), {closure#1}(), {closure#1}() (+1 more)
 
 ### Community 40 - "design_system.py"
 Cohesion: 0.08
@@ -402,20 +401,20 @@ Cohesion: 0.40
 Nodes (5): extra, laravel, post-create-project, dont-discover, installer
 
 ### Community 46 - "ClientResource"
-Cohesion: 0.16
+Cohesion: 0.10
 Nodes (7): ClientResource, {closure#1}(), Authenticated JSON API, Entity relationships, Indexes and query patterns, PayMe data and API design, State and next implementation steps
 
 ### Community 51 - "sidebar.tsx"
-Cohesion: 0.14
-Nodes (32): AppSidebar(), footerNavItems, mainNavItems, NavFooter(), NavMain(), NavUser(), DropdownMenuContent(), SidebarContent() (+24 more)
+Cohesion: 0.15
+Nodes (27): AppLogo(), AppSidebar(), footerNavItems, mainNavItems, NavFooter(), NavMain(), SidebarContent(), SidebarContext (+19 more)
 
 ### Community 52 - "DesignSystemGenerator"
 Cohesion: 0.11
 Nodes (4): DesignSystemGenerator, _resolve_dial(), TestReasoningMatch, TestEndToEndCoherence
 
 ### Community 61 - "two-factor-setup-modal.tsx"
-Cohesion: 0.16
-Nodes (17): input-otp, GridScanIcon(), Props, TwoFactorSetupModal(), TwoFactorSetupStep(), TwoFactorVerificationStep(), DialogHeader(), InputOTP (+9 more)
+Cohesion: 0.11
+Nodes (17): input-otp, GridScanIcon(), Props, TwoFactorSetupStep(), TwoFactorVerificationStep(), InputOTP, InputOTPGroup, InputOTPSeparator (+9 more)
 
 ### Community 62 - "Laravel + Inertia.js + React Skill for AI Agents"
 Cohesion: 0.07
@@ -430,8 +429,8 @@ Cohesion: 0.12
 Nodes (9): _domain_keywords(), _get_bm25(), _load_csv(), _load_product_keywords(), search(), _search_csv(), search_stack(), _suggest_terms() (+1 more)
 
 ### Community 65 - "security.tsx"
-Cohesion: 0.10
-Nodes (15): Heading(), EmptyState(), ManagePasskeys(), Props, ManageTwoFactor(), Props, useTwoFactorAuth(), UseTwoFactorAuthReturn (+7 more)
+Cohesion: 0.14
+Nodes (15): @laravel/passkeys, Heading(), EmptyState(), ManagePasskeys(), Props, ManageTwoFactor(), Props, PasskeyRegistration() (+7 more)
 
 ### Community 66 - "Laravel + Inertia.js + React"
 Cohesion: 0.08
@@ -442,8 +441,8 @@ Cohesion: 0.09
 Nodes (21): Anti-Patterns to Avoid, API Development, Architecture, Authentication, Behavioral Constraints, Blade & Views, Caching, Do NOT Use When (+13 more)
 
 ### Community 68 - "delete-user.tsx"
-Cohesion: 0.14
-Nodes (32): DeleteUser(), PasskeyItem(), Props, Dialog(), DialogClose(), DialogContent(), DialogDescription(), DialogFooter() (+24 more)
+Cohesion: 0.16
+Nodes (30): DeleteUser(), PasskeyItem(), Props, TwoFactorSetupModal(), Dialog(), DialogClose(), DialogContent(), DialogDescription() (+22 more)
 
 ### Community 69 - "Quick Reference"
 Cohesion: 0.10
@@ -453,13 +452,13 @@ Nodes (20): 1. Architecture & Structure (CRITICAL), 2. Eloquent & Database (CRIT
 Cohesion: 0.15
 Nodes (6): _filter_anti_patterns_for_mode(), _query_wants_dark(), _resolve_color_mode(), _style_is_dark_primary(), TestAntiPatternGating, TestModeResolution
 
-### Community 71 - "package.json"
-Cohesion: 0.12
-Nodes (16): concurrently@^10.0.3, @inertiajs/react@^3.0.0, @radix-ui/react-toggle@^1.1.2, @radix-ui/react-toggle-group@^1.1.2, @types/react-dom@^19.2.0, @inertiajs/react, overrides, vite (+8 more)
-
 ### Community 72 - "test_core.py"
 Cohesion: 0.15
 Nodes (5): detect_domain(), format_markdown(), generate_design_system(), TestDomainDetection, TestPersistence
+
+### Community 73 - "FortifyServiceProvider"
+Cohesion: 0.17
+Nodes (3): AppServiceProvider, {closure#1}(), FortifyServiceProvider
 
 ### Community 74 - "Design System Master File"
 Cohesion: 0.11
@@ -477,17 +476,21 @@ Nodes (16): Before Delivering App UI, Example Workflow, If a search returns 0 re
 Cohesion: 0.12
 Nodes (15): 1. Query Performance & N+1 (Critical), 2. Indexing Strategies (Critical), 3. Eloquent Optimization (High), 4. Caching with Redis (High), 5. Pagination & Large Datasets (High), 6. Transactions & Locking (High), 7. Migrations (High), 8. Query Debugging (Medium) (+7 more)
 
+### Community 78 - "Illuminate\Foundation\Http\FormRequest"
+Cohesion: 0.08
+Nodes (8): PasswordValidationRules, ProfileController, SecurityController, PasswordUpdateRequest, ProfileDeleteRequest, ProfileUpdateRequest, TwoFactorAuthenticationRequest, StoreUploadedDocumentRequest
+
 ### Community 79 - "Categories"
 Cohesion: 0.13
 Nodes (14): 1. Architecture & Structure (Critical), 2. Eloquent & Database (Critical), 3. Controllers & Routing (High), 4. Validation & Requests (High), 5. Security (High), 6. Performance (Medium), 7. API Design (Medium), 8. Testing (Low-Medium) (+6 more)
 
-### Community 80 - "ProfileValidationRules"
-Cohesion: 0.24
-Nodes (3): {closure#1}(), CreateNewUser, ResetUserPassword
+### Community 80 - "Illuminate\Foundation\Testing\RefreshDatabase"
+Cohesion: 0.21
+Nodes (3): ExampleTest, WorkspacePagesTest, ExampleTest
 
 ### Community 81 - "AppHeader"
-Cohesion: 0.19
-Nodes (21): AppHeader(), mainNavItems, Props, rightNavItems, AppLogo(), LandingNavbar(), navItems, Sheet() (+13 more)
+Cohesion: 0.32
+Nodes (13): LandingNavbar(), navItems, Sheet(), SheetClose(), SheetContent(), SheetDescription(), SheetFooter(), SheetHeader() (+5 more)
 
 ### Community 82 - "metadata.json"
 Cohesion: 0.14
@@ -517,9 +520,9 @@ Nodes (12): Accessibility, Common Rules for Professional UI + Pre-Delivery Check
 Cohesion: 0.15
 Nodes (12): 10. Charts & Data (LOW), 1. Accessibility (CRITICAL), 2. Touch & Interaction (CRITICAL), 3. Performance (HIGH), 4. Style Selection (HIGH), 5. Layout & Responsive (HIGH), 6. Typography & Color (MEDIUM), 7. Animation (MEDIUM) (+4 more)
 
-### Community 89 - "app.tsx"
-Cohesion: 0.24
-Nodes (8): withApp(), AppLogoIcon(), TooltipProvider(), AppLayout(), AuthSimpleLayout(), AuthSplitLayout(), AuthLayout(), AuthLayoutProps
+### Community 89 - "auth.ts"
+Cohesion: 0.22
+Nodes (9): Auth, Passkey, TwoFactorSecretKey, TwoFactorSetupData, User, InertiaConfig, @inertiajs/core, InputHTMLAttributes (+1 more)
 
 ### Community 90 - "Sections"
 Cohesion: 0.18
@@ -545,9 +548,9 @@ Nodes (9): Add to Layout, Benefits, Flash Message Component, Laravel Setup, Reac
 Cohesion: 0.20
 Nodes (9): Accepted P3 differences, Comparison setup, Fidelity review, Final result, Interaction and runtime checks, Iteration 1, Iteration 2, Iteration history (+1 more)
 
-### Community 96 - "Illuminate\Foundation\Http\FormRequest"
-Cohesion: 0.21
-Nodes (3): TwoFactorAuthenticationRequest, StoreClientRequest, StoreUploadedDocumentRequest
+### Community 96 - ".store"
+Cohesion: 0.36
+Nodes (3): PaymentController, StorePaymentRequest, PaymentService
 
 ### Community 97 - "Sections"
 Cohesion: 0.22
@@ -594,8 +597,8 @@ Cohesion: 0.33
 Nodes (5): Bad Example, Good Example, Laravel Backend (if applicable), Rule Title, Why
 
 ### Community 111 - "StoreInvoiceRequest.php"
-Cohesion: 0.16
-Nodes (5): {closure#1}(), StoreInvoiceRequest, {closure#1}(), StorePaymentRequest, Money
+Cohesion: 0.22
+Nodes (4): {closure#1}(), StoreInvoiceRequest, {closure#1}(), Money
 
 ### Community 112 - "RTK - Rust Token Killer"
 Cohesion: 0.33
@@ -925,9 +928,9 @@ Nodes (3): Column Naming Conventions, Correct, Incorrect
 Cohesion: 0.50
 Nodes (3): Correct, Incorrect, Migration and Index Naming
 
-### Community 195 - "DashboardService.php"
-Cohesion: 0.17
-Nodes (5): Incorrect, Correct, Incorrect, Relationship Method Naming, DashboardService
+### Community 195 - ".users"
+Cohesion: 0.33
+Nodes (4): Incorrect, Correct, Incorrect, Relationship Method Naming
 
 ### Community 196 - "naming-tables.md"
 Cohesion: 0.50
@@ -954,22 +957,22 @@ Cohesion: 0.50
 Nodes (4): priority, critical, high, medium
 
 ## Knowledge Gaps
-- **41 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **38 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Sections` connect `Sections` to `DashboardService.php`, `Laravel Database Optimization - Complete Reference`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `Button`, `security.tsx`, `invoices.tsx`, `delete-user.tsx`, `dropdown-menu.tsx`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `user-info.tsx`, `index.ts`, `AppHeader`, `sidebar.tsx`, `breadcrumbs.tsx`, `layout.tsx`, `toggle-group.tsx`, `two-factor-setup-modal.tsx`, `lucide-react`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Should `Button` be split into smaller, more focused modules?**
-  _Cohesion score 0.11818181818181818 - nodes in this community are weakly interconnected._
-- **Why does `Incorrect` connect `DashboardService.php` to `Sections`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+  _Cohesion score 0.10839598997493734 - nodes in this community are weakly interconnected._
+- **Why does `Sections` connect `Sections` to `.users`, `Laravel Database Optimization - Complete Reference`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Should `invoices.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.13588850174216027 - nodes in this community are weakly interconnected._
+- **Why does `Incorrect` connect `.users` to `Sections`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Should `FortifyServiceProvider.php` be split into smaller, more focused modules?**
-  _Cohesion score 0.08258258258258258 - nodes in this community are weakly interconnected._
-- **Why does `cn()` connect `cn` to `Button`, `delete-user.tsx`, `dropdown-menu.tsx`, `index.ts`, `two-factor-recovery-codes.tsx`, `user-info.tsx`, `AppHeader`, `sidebar.tsx`, `breadcrumbs.tsx`, `layout.tsx`, `toggle-group.tsx`, `two-factor-setup-modal.tsx`, `lucide-react`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+  _Cohesion score 0.07965860597439545 - nodes in this community are weakly interconnected._
 - **Should `Laravel 13 Best Practices - Complete Guide` be split into smaller, more focused modules?**
   _Cohesion score 0.014598540145985401 - nodes in this community are weakly interconnected._
-- **Should `dropdown-menu.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.1341991341991342 - nodes in this community are weakly interconnected._

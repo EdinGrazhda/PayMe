@@ -35,6 +35,21 @@ class InvoiceResource extends JsonResource
             'sent_at' => $this->sent_at?->toIso8601String(),
             'paid_at' => $this->paid_at?->toIso8601String(),
             'next_reminder_at' => $this->whenLoaded('reminders', fn () => $this->reminders->first()?->scheduled_at?->toIso8601String()),
+            'items' => $this->whenLoaded('items', fn () => $this->items->map(fn ($item) => [
+                'description' => $item->description,
+                'quantity' => $item->quantity,
+                'unit_price_minor' => (int) $item->unit_price_minor,
+                'total_minor' => (int) $item->total_minor,
+            ])->values()),
+            'payments' => $this->whenLoaded('payments', fn () => $this->payments->map(fn ($payment) => [
+                'amount_minor' => (int) $payment->amount_minor,
+                'method' => $payment->method,
+                'paid_at' => $payment->paid_at->toIso8601String(),
+            ])->values()),
+            'events' => $this->whenLoaded('events', fn () => $this->events->map(fn ($event) => [
+                'type' => $event->type,
+                'occurred_at' => $event->occurred_at->toIso8601String(),
+            ])->values()),
         ];
     }
 }

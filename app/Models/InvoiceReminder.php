@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
-/** @property Carbon $scheduled_at */
+/**
+ * @property Carbon $scheduled_at
+ * @property Carbon|null $sent_at
+ */
 class InvoiceReminder extends Model
 {
     protected $fillable = ['business_id', 'invoice_id', 'reminder_rule_id', 'sequence', 'tone', 'status', 'scheduled_at', 'queued_at', 'sent_at', 'failed_at', 'cancelled_at', 'failure_reason'];
