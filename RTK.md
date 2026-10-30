@@ -1,18 +1,18 @@
 # RTK - Rust Token Killer
 
-RTK is installed for this project environment and provides token-optimized wrappers around common shell commands. It is useful when command output would otherwise be large or repetitive.
+RTK is installed globally for Codex and its `PreToolUse` hook automatically compresses supported shell commands. It is useful when command output would otherwise be large or repetitive.
 
-The user should not need to request RTK by name. Agents should choose RTK automatically for noisy shell commands and use native commands when exact output matters.
+The user should not need to request RTK by name. Run supported commands normally so the hook can rewrite them; do not manually double-wrap them. Use native commands when exact output matters.
 
 ## How RTK Fits With Graphify
 
 Graphify is the project map. Use it first for codebase understanding, locating implementation areas, architectural questions, and source-change planning.
 
-RTK is the output filter. Use it after Graphify when shell commands are still needed and their output is expected to be noisy.
+RTK is the output filter. The global Codex hook applies it after Graphify when supported shell commands are still needed and their output is expected to be noisy.
 
-If a task involves both codebase understanding and shell output, run Graphify first, then use RTK for follow-up commands such as status, diff, search, tests, logs, build, and lint.
+If a task involves both codebase understanding and shell output, run Graphify first, then run follow-up commands such as status, diff, search, tests, logs, build, and lint normally. If the hook is unavailable, the explicit RTK wrappers below are a fallback.
 
-## Good RTK Uses
+## Explicit fallback when the hook is unavailable
 
 ```bash
 rtk git status

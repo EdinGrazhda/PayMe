@@ -1,0 +1,16 @@
+# Keep the graph focused on application source and architecture.
+.ai/skills/
+.agents/
+
+# Dependencies, generated output, runtime state, and private data.
+vendor/
+node_modules/
+public/build/
+bootstrap/cache/
+storage/
+coverage/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
