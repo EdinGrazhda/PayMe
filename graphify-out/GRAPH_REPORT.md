@@ -1,17 +1,17 @@
 # Graph Report - PayMe  (2026-10-30)
 
 ## Corpus Check
-- 218 files · ~45,491 words
+- 218 files · ~45,486 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 12 file(s) not represented in the graph (top: (none) 7, .example 1, .neon 1)
+- Unclassified: 13 file(s) not represented in the graph (top: (none) 7, .example 1, .neon 1)
 
 ## Summary
-- 1303 nodes · 3143 edges · 82 communities (51 shown, 31 thin omitted)
+- 1303 nodes · 3147 edges · 87 communities (56 shown, 31 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 46 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8788aa08`
+- Built from commit: `5fdd078a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,13 +23,13 @@
 - BusinessContext
 - Illuminate\Database\Eloquent\Model
 - navbar.tsx
-- layout.tsx
+- app-header.tsx
 - Invoice
 - dependencies
 - use-appearance.tsx
 - two-factor-recovery-codes.tsx
 - TestCase
-- sidebar.tsx
+- app-sidebar.tsx
 - ProfileController.php
 - index.ts
 - package.json
@@ -42,7 +42,7 @@
 - StoreInvoiceRequest.php
 - FortifyServiceProvider
 - PasswordValidationRules
-- Business
+- InvoiceReminder
 - compilerOptions
 - optionalDependencies
 - bootstrap/app.php
@@ -76,14 +76,18 @@
 - SeoDiscoveryController
 - InvoiceApiTest
 - Laravel\Fortify\Features
-- ProfileUpdateTest
+- Illuminate\Foundation\Testing\RefreshDatabase
 - pnpm-workspace.yaml
 - PayMe SEO audit — 30 October 2026
 - Design System Master File
 - @radix-ui/react-navigation-menu
 - seo-keyword-strategy.md
 - PayMe landing page — design QA
+- .store
 - RTK - Rust Token Killer
+- InvoiceController.php
+- ResetUserPassword.php
+- HandleAppearance.php
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 135 edges
@@ -91,7 +95,7 @@
 3. `Button()` - 51 edges
 4. `@inertiajs/react` - 46 edges
 5. `User` - 40 edges
-6. `lucide-react` - 40 edges
+6. `lucide-react` - 38 edges
 7. `TestCase` - 35 edges
 8. `Invoice` - 30 edges
 9. `BusinessContext` - 30 edges
@@ -112,7 +116,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (82 total, 31 thin omitted)
+## Communities (87 total, 31 thin omitted)
 
 ### Community 0 - "react"
 Cohesion: 0.06
@@ -132,43 +136,47 @@ Nodes (25): {closure#1}(), {closure#2}(), {closure#3}(), {closure#1}(), {closure
 
 ### Community 4 - "BusinessContext"
 Cohesion: 0.19
-Nodes (6): ClientController, ReminderController, UpdateClientRequest, Client, BusinessContext, ReminderService
+Nodes (6): ClientController, InvoiceController, ReminderController, UpdateClientRequest, InvoiceResource, BusinessContext
 
 ### Community 5 - "Illuminate\Database\Eloquent\Model"
 Cohesion: 0.09
-Nodes (8): InvoiceEvent, InvoiceItem, InvoiceReminder, Payment, Plan, ReminderRule, Subscription, UploadedDocument
+Nodes (8): Client, InvoiceEvent, InvoiceItem, Payment, Plan, ReminderRule, Subscription, UploadedDocument
 
 ### Community 6 - "navbar.tsx"
 Cohesion: 0.32
 Nodes (13): LandingNavbar(), navItems, Sheet(), SheetClose(), SheetContent(), SheetDescription(), SheetFooter(), SheetHeader() (+5 more)
 
-### Community 7 - "layout.tsx"
-Cohesion: 0.22
-Nodes (4): Separator(), SidebarSeparator(), sidebarNavItems, NavItem
+### Community 7 - "app-header.tsx"
+Cohesion: 0.11
+Nodes (27): AppHeader(), mainNavItems, Props, rightNavItems, AppLogo(), AppLogoIcon(), NavigationMenu(), NavigationMenuContent() (+19 more)
 
 ### Community 8 - "Invoice"
-Cohesion: 0.15
-Nodes (9): InvoiceController, InvoiceResource, Invoice, {closure#1}(), {closure#2}(), InvoiceService, {closure#1}(), {closure#1}() (+1 more)
+Cohesion: 0.12
+Nodes (9): Business, Invoice, {closure#1}(), {closure#1}(), {closure#2}(), InvoiceService, {closure#1}(), {closure#1}() (+1 more)
 
 ### Community 9 - "dependencies"
 Cohesion: 0.07
 Nodes (29): dependencies, @inertiajs/react@^3.0.0, input-otp@^1.4.2, @laravel/passkeys@^0.2.0, lucide-react@^0.475.0, @radix-ui/react-avatar@^1.1.3, @radix-ui/react-checkbox@^1.1.4, @radix-ui/react-collapsible@^1.1.3 (+21 more)
 
 ### Community 10 - "use-appearance.tsx"
-Cohesion: 0.12
-Nodes (23): withApp(), AppearanceToggleTab(), Toaster(), TooltipProvider(), Appearance, applyTheme(), getStoredAppearance(), handleSystemThemeChange() (+15 more)
+Cohesion: 0.11
+Nodes (24): withApp(), AppearanceToggleTab(), Toaster(), TooltipProvider(), Appearance, applyTheme(), getStoredAppearance(), handleSystemThemeChange() (+16 more)
 
 ### Community 11 - "two-factor-recovery-codes.tsx"
-Cohesion: 0.17
-Nodes (18): AlertError(), AppLogoIcon(), Props, TwoFactorRecoveryCodes(), Alert(), AlertDescription(), AlertTitle(), alertVariants (+10 more)
+Cohesion: 0.25
+Nodes (14): AlertError(), Props, TwoFactorRecoveryCodes(), Alert(), AlertDescription(), AlertTitle(), alertVariants, Card() (+6 more)
 
 ### Community 12 - "TestCase"
-Cohesion: 0.10
-Nodes (7): RegistrationTest, DashboardTest, ExampleTest, SeoDiscoveryControllerTest, WorkspacePagesTest, TestCase, ExampleTest
+Cohesion: 0.15
+Nodes (4): SeoDiscoveryControllerTest, WorkspacePagesTest, TestCase, ExampleTest
 
-### Community 13 - "sidebar.tsx"
-Cohesion: 0.12
-Nodes (35): AppLogo(), AppSidebar(), footerNavItems, mainNavItems, NavFooter(), NavMain(), NavUser(), DropdownMenu() (+27 more)
+### Community 13 - "app-sidebar.tsx"
+Cohesion: 0.17
+Nodes (17): AppSidebar(), footerNavItems, mainNavItems, NavFooter(), NavMain(), SidebarContent(), SidebarFooter(), SidebarGroup() (+9 more)
+
+### Community 14 - "ProfileController.php"
+Cohesion: 0.19
+Nodes (3): ProfileController, SecurityController, ProfileUpdateRequest
 
 ### Community 15 - "index.ts"
 Cohesion: 0.19
@@ -187,12 +195,12 @@ Cohesion: 0.11
 Nodes (19): @inertiajs/vite@^3.0.0, laravel-vite-plugin@^3.0.0, @tailwindcss/vite@^4.1.11, @vitejs/plugin-react@^6.1.1, devDependencies, babel-plugin-react-compiler@^1.0.0, @laravel/vite-plugin-wayfinder@^0.1.3, @rolldown/plugin-babel@^0.2.3 (+11 more)
 
 ### Community 19 - "dropdown-menu.tsx"
-Cohesion: 0.15
-Nodes (13): DropdownMenuCheckboxItem(), DropdownMenuGroup(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem(), DropdownMenuSeparator(), DropdownMenuShortcut(), DropdownMenuSubContent() (+5 more)
+Cohesion: 0.12
+Nodes (23): NavUser(), DropdownMenu(), DropdownMenuCheckboxItem(), DropdownMenuContent(), DropdownMenuGroup(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem() (+15 more)
 
 ### Community 20 - "InvoiceResource.php"
-Cohesion: 0.09
-Nodes (8): ClientResource, {closure#1}(), ReminderResource, Authenticated JSON API, Entity relationships, Indexes and query patterns, PayMe data and API design, State and next implementation steps
+Cohesion: 0.11
+Nodes (7): ClientResource, {closure#1}(), Authenticated JSON API, Entity relationships, Indexes and query patterns, PayMe data and API design, State and next implementation steps
 
 ### Community 22 - "components.json"
 Cohesion: 0.11
@@ -203,20 +211,20 @@ Cohesion: 0.13
 Nodes (7): {closure#1}(), PasswordConfirmationTest, {closure#1}(), LandingPageTest, {closure#1}(), {closure#2}(), SecurityTest
 
 ### Community 24 - "StoreInvoiceRequest.php"
-Cohesion: 0.16
-Nodes (5): HandleAppearance, {closure#1}(), StoreInvoiceRequest, {closure#1}(), Money
+Cohesion: 0.30
+Nodes (3): {closure#1}(), {closure#1}(), Money
 
 ### Community 25 - "FortifyServiceProvider"
 Cohesion: 0.17
 Nodes (3): AppServiceProvider, {closure#1}(), FortifyServiceProvider
 
 ### Community 26 - "PasswordValidationRules"
-Cohesion: 0.17
-Nodes (5): {closure#1}(), CreateNewUser, ResetUserPassword, PasswordValidationRules, ProfileDeleteRequest
+Cohesion: 0.23
+Nodes (3): PasswordValidationRules, PasswordUpdateRequest, ProfileDeleteRequest
 
-### Community 27 - "Business"
-Cohesion: 0.18
-Nodes (4): Business, AnalyticsService, {closure#1}(), DashboardService
+### Community 27 - "InvoiceReminder"
+Cohesion: 0.22
+Nodes (3): ReminderResource, InvoiceReminder, ReminderService
 
 ### Community 28 - "compilerOptions"
 Cohesion: 0.12
@@ -235,8 +243,8 @@ Cohesion: 0.44
 Nodes (8): Breadcrumbs(), Breadcrumb(), BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage(), BreadcrumbSeparator()
 
 ### Community 32 - "Illuminate\Foundation\Http\FormRequest"
-Cohesion: 0.15
-Nodes (4): PasswordUpdateRequest, TwoFactorAuthenticationRequest, StoreClientRequest, StoreUploadedDocumentRequest
+Cohesion: 0.19
+Nodes (3): TwoFactorAuthenticationRequest, StoreClientRequest, StoreUploadedDocumentRequest
 
 ### Community 34 - "scripts"
 Cohesion: 0.15
@@ -245,6 +253,10 @@ Nodes (13): scripts, ci:check, dev, lint, lint:check, post-autoload-dump, post-c
 ### Community 37 - "toggle-group.tsx"
 Cohesion: 0.21
 Nodes (11): class-variance-authority@^0.7.1, @radix-ui/react-toggle@^1.1.2, @radix-ui/react-toggle-group@^1.1.2, class-variance-authority, @radix-ui/react-toggle, @radix-ui/react-toggle-group, ToggleGroup(), ToggleGroupContext (+3 more)
+
+### Community 38 - "CreateNewUser.php"
+Cohesion: 0.33
+Nodes (3): {closure#1}(), CreateNewUser, ProfileValidationRules
 
 ### Community 39 - "composer.json"
 Cohesion: 0.17
@@ -268,15 +280,15 @@ Nodes (10): require, inertiajs/inertia-laravel, laravel/ai, laravel/chisel, lara
 
 ### Community 45 - "cn"
 Cohesion: 0.15
-Nodes (19): NavigationMenu(), NavigationMenuContent(), NavigationMenuIndicator(), NavigationMenuItem(), NavigationMenuLink(), NavigationMenuList(), NavigationMenuTrigger(), navigationMenuTriggerStyle (+11 more)
+Nodes (21): SelectContent(), SelectItem(), SelectLabel(), SelectScrollDownButton(), SelectScrollUpButton(), SelectSeparator(), SelectTrigger(), Separator() (+13 more)
 
 ### Community 46 - "user-info.tsx"
-Cohesion: 0.16
-Nodes (21): AppHeader(), mainNavItems, Props, rightNavItems, Avatar(), AvatarFallback(), AvatarImage(), Tooltip() (+13 more)
+Cohesion: 0.40
+Nodes (7): Avatar(), AvatarFallback(), AvatarImage(), UserInfo(), getInitial(), GetInitialsFn, useInitials()
 
 ### Community 48 - "Controller"
-Cohesion: 0.14
-Nodes (7): AnalyticsController, DashboardController, PaymentController, UploadedDocumentController, Controller, StorePaymentRequest, PaymentService
+Cohesion: 0.15
+Nodes (6): AnalyticsController, DashboardController, UploadedDocumentController, Controller, AnalyticsService, DashboardService
 
 ### Community 50 - "config"
 Cohesion: 0.29
@@ -302,6 +314,14 @@ Nodes (4): @radix-ui/react-slot@^1.2.3, @radix-ui/react-slot, Badge(), badgeVari
 Cohesion: 0.25
 Nodes (5): SeoDiscoveryController, Current architecture, Future design, not implemented, Operational configuration, PayMe SEO architecture and staged automation
 
+### Community 63 - "Laravel\Fortify\Features"
+Cohesion: 0.15
+Nodes (3): RegistrationTest, {closure#1}(), TwoFactorChallengeTest
+
+### Community 64 - "Illuminate\Foundation\Testing\RefreshDatabase"
+Cohesion: 0.16
+Nodes (3): DashboardTest, ExampleTest, ProfileUpdateTest
+
 ### Community 67 - "PayMe SEO audit — 30 October 2026"
 Cohesion: 0.33
 Nodes (5): Implemented in this stage, Next approvals and measurements, PayMe SEO audit — 30 October 2026, Prioritized findings, Scope and evidence
@@ -314,6 +334,10 @@ Nodes (17): Additional Forbidden Patterns, Anti-Patterns (Do NOT Use), Buttons, 
 Cohesion: 0.20
 Nodes (9): Accepted P3 differences, Comparison setup, Fidelity review, Final result, Interaction and runtime checks, Iteration 1, Iteration 2, Iteration history (+1 more)
 
+### Community 81 - ".store"
+Cohesion: 0.36
+Nodes (3): PaymentController, StorePaymentRequest, PaymentService
+
 ### Community 82 - "RTK - Rust Token Killer"
 Cohesion: 0.33
 Nodes (5): Avoid RTK For, Explicit fallback when the hook is unavailable, How RTK Fits With Graphify, RTK - Rust Token Killer, Useful Checks
@@ -324,17 +348,17 @@ Nodes (5): Avoid RTK For, Explicit fallback when the hook is unavailable, How RT
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `dashboard.tsx`, `lucide-react`, `toggle-group.tsx`, `navbar.tsx`, `layout.tsx`, `dependencies`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `sidebar.tsx`, `user-info.tsx`, `index.ts`, `package.json`, `cn`, `dropdown-menu.tsx`, `badge.tsx`, `breadcrumbs.tsx`?**
-  _High betweenness centrality (0.045) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `react`, `dashboard.tsx`, `lucide-react`, `toggle-group.tsx`, `navbar.tsx`, `app-header.tsx`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `app-sidebar.tsx`, `user-info.tsx`, `index.ts`, `dropdown-menu.tsx`, `badge.tsx`, `breadcrumbs.tsx`?**
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
 - **Should `react` be split into smaller, more focused modules?**
-  _Cohesion score 0.05744449619624282 - nodes in this community are weakly interconnected._
-- **Why does `cn()` connect `cn` to `react`, `dashboard.tsx`, `lucide-react`, `toggle-group.tsx`, `navbar.tsx`, `layout.tsx`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `sidebar.tsx`, `user-info.tsx`, `index.ts`, `dropdown-menu.tsx`, `badge.tsx`, `breadcrumbs.tsx`?**
-  _High betweenness centrality (0.045) - this node is a cross-community bridge._
+  _Cohesion score 0.057838179519595447 - nodes in this community are weakly interconnected._
+- **Why does `react` connect `react` to `dashboard.tsx`, `lucide-react`, `toggle-group.tsx`, `navbar.tsx`, `app-header.tsx`, `dependencies`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `app-sidebar.tsx`, `user-info.tsx`, `index.ts`, `package.json`, `cn`, `dropdown-menu.tsx`, `badge.tsx`, `breadcrumbs.tsx`?**
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **Should `dashboard.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.08036036036036036 - nodes in this community are weakly interconnected._
-- **Why does `@inertiajs/react` connect `react` to `dashboard.tsx`, `lucide-react`, `navbar.tsx`, `layout.tsx`, `dependencies`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `sidebar.tsx`, `user-info.tsx`, `index.ts`, `package.json`, `dropdown-menu.tsx`, `breadcrumbs.tsx`?**
+- **Why does `@inertiajs/react` connect `react` to `dashboard.tsx`, `lucide-react`, `navbar.tsx`, `app-header.tsx`, `dependencies`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `app-sidebar.tsx`, `cn`, `index.ts`, `package.json`, `dropdown-menu.tsx`, `breadcrumbs.tsx`?**
   _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Should `lucide-react` be split into smaller, more focused modules?**
-  _Cohesion score 0.10235690235690235 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10064935064935066 - nodes in this community are weakly interconnected._
 - **Should `Illuminate\Database\Schema\Blueprint` be split into smaller, more focused modules?**
   _Cohesion score 0.06458635703918723 - nodes in this community are weakly interconnected._

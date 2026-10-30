@@ -1,6 +1,7 @@
 import { Link } from '@inertiajs/react';
-import { ArrowRight, CircleDollarSign } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import type { ComponentType, ReactNode } from 'react';
+import AppLogoIcon from '@/components/app-logo-icon';
 import { cn } from '@/lib/utils';
 
 export function Container({
@@ -20,14 +21,7 @@ export function Container({
 export function PayMeLogo({ inverse = false }: { inverse?: boolean }) {
     return (
         <span className="inline-flex items-center gap-2.5" aria-label="PayMe">
-            <span
-                className={cn(
-                    'grid size-9 place-items-center rounded-xl',
-                    inverse ? 'bg-white text-[#12563f]' : 'bg-[#12563f] text-white',
-                )}
-            >
-                <CircleDollarSign className="size-5" strokeWidth={2.25} aria-hidden="true" />
-            </span>
+            <AppLogoIcon alt="" className="size-10 shrink-0 object-contain" />
             <span className={cn('text-xl font-bold tracking-[-0.035em]', inverse ? 'text-white' : 'text-[#101714]')}>
                 PayMe
             </span>

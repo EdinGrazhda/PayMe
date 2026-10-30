@@ -295,22 +295,22 @@
     "semantic_hash": "499c8657bfc7c17680d4e7c5b87b06b1"
   },
   "resources/js/components/app-header.tsx": {
-    "mtime": 1793190263.0,
-    "seen": 1793233119.0027878,
-    "ast_hash": "d3a48b1c84ccedc7cb9fc79cfa43da9d",
-    "semantic_hash": "d3a48b1c84ccedc7cb9fc79cfa43da9d"
+    "mtime": 1793322755.0640187,
+    "seen": 1793322784.2685921,
+    "ast_hash": "321a3ca36fc7faa1198d7a479244588d",
+    "semantic_hash": ""
   },
   "resources/js/components/app-logo-icon.tsx": {
-    "mtime": 1793287159.921484,
-    "seen": 1793316644.6643348,
-    "ast_hash": "9dece40d12d789e84458443af4dfebbf",
-    "semantic_hash": "9dece40d12d789e84458443af4dfebbf"
+    "mtime": 1793322754.7840219,
+    "seen": 1793322784.2686002,
+    "ast_hash": "f8522a4dd6432f95854e3009fc5a84cc",
+    "semantic_hash": ""
   },
   "resources/js/components/app-logo.tsx": {
-    "mtime": 1793287159.9215634,
-    "seen": 1793316644.6643786,
-    "ast_hash": "81de6aae09cb8c2b9f6613f89071320e",
-    "semantic_hash": "81de6aae09cb8c2b9f6613f89071320e"
+    "mtime": 1793322754.9180202,
+    "seen": 1793322784.2686028,
+    "ast_hash": "550c24eff7c0ea02d6f933b3f665e72c",
+    "semantic_hash": ""
   },
   "resources/js/components/app-shell.tsx": {
     "mtime": 1793190263.0,
@@ -673,22 +673,22 @@
     "semantic_hash": "8ad4492ff3b9a4accb5f1b73201f4ce5"
   },
   "resources/js/layouts/auth/auth-card-layout.tsx": {
-    "mtime": 1793190263.0,
-    "seen": 1793233119.0078979,
-    "ast_hash": "3a00a3735acac9e91e961eb1c901b44f",
-    "semantic_hash": "3a00a3735acac9e91e961eb1c901b44f"
+    "mtime": 1793322755.1830175,
+    "seen": 1793322784.2688313,
+    "ast_hash": "d454359e5000414acb570b2e84e12f05",
+    "semantic_hash": ""
   },
   "resources/js/layouts/auth/auth-simple-layout.tsx": {
-    "mtime": 1793190263.0,
-    "seen": 1793233119.0079765,
-    "ast_hash": "af16a46877d2c37e4657e4bd06c931db",
-    "semantic_hash": "af16a46877d2c37e4657e4bd06c931db"
+    "mtime": 1793322755.310016,
+    "seen": 1793322784.2688353,
+    "ast_hash": "bb7223ae71f1745b783c9c1479fd01a3",
+    "semantic_hash": ""
   },
   "resources/js/layouts/auth/auth-split-layout.tsx": {
-    "mtime": 1793190263.0,
-    "seen": 1793233119.0080516,
-    "ast_hash": "f3ef07e8086a8feb1b8147e6b75d203a",
-    "semantic_hash": "f3ef07e8086a8feb1b8147e6b75d203a"
+    "mtime": 1793322755.460734,
+    "seen": 1793322784.2688375,
+    "ast_hash": "d150e0985ed0087a0f9146dc0f6c8642",
+    "semantic_hash": ""
   },
   "resources/js/layouts/settings/layout.tsx": {
     "mtime": 1793190263.0,
@@ -811,10 +811,10 @@
     "semantic_hash": "0352474ba2918efe13895edbc3780d94"
   },
   "resources/views/app.blade.php": {
-    "mtime": 1793287159.922298,
-    "seen": 1793316644.6729999,
-    "ast_hash": "204e3941236b26918e6279fdc36b957c",
-    "semantic_hash": "204e3941236b26918e6279fdc36b957c"
+    "mtime": 1793322755.6090128,
+    "seen": 1793322784.2689214,
+    "ast_hash": "f5de56be0454bac055ef85e6bea24743",
+    "semantic_hash": ""
   },
   "routes/console.php": {
     "mtime": 1793190263.0,
@@ -829,10 +829,10 @@
     "semantic_hash": "eb08d515cde3d3c778d7ce69893d2831"
   },
   "routes/web.php": {
-    "mtime": 1793287994.9992692,
-    "seen": 1793316644.6732113,
-    "ast_hash": "3edf825c0127794809c401c738fccb21",
-    "semantic_hash": "3edf825c0127794809c401c738fccb21"
+    "mtime": 1793322497.1068864,
+    "seen": 1793322691.994657,
+    "ast_hash": "603160bb853310b3b74a0b68348d40a2",
+    "semantic_hash": ""
   },
   "tests/Feature/Auth/AuthenticationTest.php": {
     "mtime": 1793233280.9926445,
@@ -990,12 +990,6 @@
     "ast_hash": "5f22feb7a5c2edc6aae4d8b2be2f6da5",
     "semantic_hash": ""
   },
-  "public/robots.txt": {
-    "mtime": 1793190263.0,
-    "seen": 1793284482.9193716,
-    "ast_hash": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "semantic_hash": ""
-  },
   "design-reference-payme-landing.png": {
     "mtime": 1793235470.682995,
     "seen": 1793284482.919373,
@@ -1003,9 +997,9 @@
     "semantic_hash": ""
   },
   "public/apple-touch-icon.png": {
-    "mtime": 1793190263.0,
-    "seen": 1793284482.9193747,
-    "ast_hash": "4ec34bfee5050d402638888ce2e9a968",
+    "mtime": 1793322762.7033002,
+    "seen": 1793322784.2690275,
+    "ast_hash": "6797fb2070fbcebc09f22d76e512bac1",
     "semantic_hash": ""
   },
   "public/favicon.svg": {
@@ -1295,6 +1289,72 @@
     "seen": 1793316644.6743877,
     "ast_hash": "6fcfe79b1355055e46878649c4b3cab2",
     "semantic_hash": "6fcfe79b1355055e46878649c4b3cab2"
+  },
+  "app/Http/Controllers/SeoDiscoveryController.php": {
+    "mtime": 1793322497.0960526,
+    "seen": 1793322691.994394,
+    "ast_hash": "9478eb1c245806ab71822cfd2db91ee5",
+    "semantic_hash": ""
+  },
+  "config/seo.php": {
+    "mtime": 1793322497.0961092,
+    "seen": 1793322691.9944913,
+    "ast_hash": "81cdae9361e8d9e283b0c01083fee990",
+    "semantic_hash": ""
+  },
+  "tests/Feature/SeoDiscoveryControllerTest.php": {
+    "mtime": 1793322497.106958,
+    "seen": 1793322691.9946706,
+    "ast_hash": "d206a462f4aab3ddec508434a3814bb6",
+    "semantic_hash": ""
+  },
+  "docs/seo-agent.md": {
+    "mtime": 1793322497.0961857,
+    "seen": 1793322691.9946847,
+    "ast_hash": "639c8635ed62225ddf59f57922dc0ff5",
+    "semantic_hash": ""
+  },
+  "docs/seo-audit.md": {
+    "mtime": 1793322497.0962584,
+    "seen": 1793322691.9946866,
+    "ast_hash": "99ee4f257481b7d99c82a6e7c43eaee2",
+    "semantic_hash": ""
+  },
+  "docs/seo-keyword-strategy.md": {
+    "mtime": 1793322497.0963235,
+    "seen": 1793322691.9946883,
+    "ast_hash": "5c8a669617cbedf67bb03e5e4a477d08",
+    "semantic_hash": ""
+  },
+  "public/images/payme-happy-invoice-logo.png": {
+    "mtime": 1793322690.1519427,
+    "seen": 1793322691.9946969,
+    "ast_hash": "56ac41f4e5ffd93d710e9660970cfff1",
+    "semantic_hash": ""
+  },
+  "public/android-chrome-192x192.png": {
+    "mtime": 1793322762.8350916,
+    "seen": 1793322784.269021,
+    "ast_hash": "6b475810facb7d70915d4a3d0bd95fd3",
+    "semantic_hash": ""
+  },
+  "public/android-chrome-512x512.png": {
+    "mtime": 1793322762.9824574,
+    "seen": 1793322784.2690237,
+    "ast_hash": "d3fbb6fee117d6087be38d994b563973",
+    "semantic_hash": ""
+  },
+  "public/favicon-16x16.png": {
+    "mtime": 1793322762.3777215,
+    "seen": 1793322784.2690294,
+    "ast_hash": "46b3b467ea36fe633e531c6912e032d5",
+    "semantic_hash": ""
+  },
+  "public/favicon-32x32.png": {
+    "mtime": 1793322762.522281,
+    "seen": 1793322784.269032,
+    "ast_hash": "9e57ea1cdc9f842a67f12c5c6b706eda",
+    "semantic_hash": ""
   },
   "package-lock.json": {
     "mtime": 1793233266.99315,
