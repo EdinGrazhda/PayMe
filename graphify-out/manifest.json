@@ -829,10 +829,10 @@
     "semantic_hash": "eb08d515cde3d3c778d7ce69893d2831"
   },
   "routes/web.php": {
-    "mtime": 1793287994.9992692,
-    "seen": 1793316644.6732113,
-    "ast_hash": "3edf825c0127794809c401c738fccb21",
-    "semantic_hash": "3edf825c0127794809c401c738fccb21"
+    "mtime": 1793322332.9404655,
+    "seen": 1793322453.3525505,
+    "ast_hash": "603160bb853310b3b74a0b68348d40a2",
+    "semantic_hash": ""
   },
   "tests/Feature/Auth/AuthenticationTest.php": {
     "mtime": 1793233280.9926445,
@@ -988,12 +988,6 @@
     "mtime": 1793233835.5255017,
     "seen": 1793284482.9193702,
     "ast_hash": "5f22feb7a5c2edc6aae4d8b2be2f6da5",
-    "semantic_hash": ""
-  },
-  "public/robots.txt": {
-    "mtime": 1793190263.0,
-    "seen": 1793284482.9193716,
-    "ast_hash": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "semantic_hash": ""
   },
   "design-reference-payme-landing.png": {
@@ -1295,6 +1289,42 @@
     "seen": 1793316644.6743877,
     "ast_hash": "6fcfe79b1355055e46878649c4b3cab2",
     "semantic_hash": "6fcfe79b1355055e46878649c4b3cab2"
+  },
+  "app/Http/Controllers/SeoDiscoveryController.php": {
+    "mtime": 1793322332.7524674,
+    "seen": 1793322453.3518133,
+    "ast_hash": "9478eb1c245806ab71822cfd2db91ee5",
+    "semantic_hash": ""
+  },
+  "config/seo.php": {
+    "mtime": 1793322333.2404625,
+    "seen": 1793322453.3521242,
+    "ast_hash": "81cdae9361e8d9e283b0c01083fee990",
+    "semantic_hash": ""
+  },
+  "tests/Feature/SeoDiscoveryControllerTest.php": {
+    "mtime": 1793322334.4116938,
+    "seen": 1793322453.3525836,
+    "ast_hash": "d206a462f4aab3ddec508434a3814bb6",
+    "semantic_hash": ""
+  },
+  "docs/seo-agent.md": {
+    "mtime": 1793322431.9584546,
+    "seen": 1793322453.3526175,
+    "ast_hash": "639c8635ed62225ddf59f57922dc0ff5",
+    "semantic_hash": ""
+  },
+  "docs/seo-audit.md": {
+    "mtime": 1793322431.821456,
+    "seen": 1793322453.3526192,
+    "ast_hash": "99ee4f257481b7d99c82a6e7c43eaee2",
+    "semantic_hash": ""
+  },
+  "docs/seo-keyword-strategy.md": {
+    "mtime": 1793322404.6807356,
+    "seen": 1793322453.352621,
+    "ast_hash": "5c8a669617cbedf67bb03e5e4a477d08",
+    "semantic_hash": ""
   },
   "package-lock.json": {
     "mtime": 1793233266.99315,

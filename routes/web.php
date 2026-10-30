@@ -7,9 +7,12 @@ use App\Http\Controllers\Api\InvoiceController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\ReminderController;
 use App\Http\Controllers\Api\UploadedDocumentController;
+use App\Http\Controllers\SeoDiscoveryController;
 use Illuminate\Support\Facades\Route;
 
 Route::inertia('/', 'welcome')->name('home');
+Route::get('robots.txt', [SeoDiscoveryController::class, 'robots'])->name('seo.robots');
+Route::get('sitemap.xml', [SeoDiscoveryController::class, 'sitemap'])->name('seo.sitemap');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');

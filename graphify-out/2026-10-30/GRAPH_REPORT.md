@@ -1,7 +1,7 @@
 # Graph Report - PayMe  (2026-10-30)
 
 ## Corpus Check
-- 212 files · ~43,908 words
+- 212 files · ~43,934 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 12 file(s) not represented in the graph (top: (none) 7, .example 1, .neon 1)
 
@@ -320,7 +320,7 @@ Nodes (9): Accepted P3 differences, Comparison setup, Fidelity review, Final res
 
 ### Community 82 - "RTK - Rust Token Killer"
 Cohesion: 0.33
-Nodes (5): Avoid RTK For, Good RTK Uses, How RTK Fits With Graphify, RTK - Rust Token Killer, Useful Checks
+Nodes (5): Avoid RTK For, Explicit fallback when the hook is unavailable, How RTK Fits With Graphify, RTK - Rust Token Killer, Useful Checks
 
 ### Community 84 - "PayMe data and API design"
 Cohesion: 0.40
@@ -333,7 +333,7 @@ Nodes (4): Entity relationships, Indexes and query patterns, PayMe data and API 
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `cn()` connect `cn` to `react`, `dashboard.tsx`, `lucide-react`, `toggle-group.tsx`, `navbar.tsx`, `cn`, `two-factor-recovery-codes.tsx`, `app-sidebar.tsx`, `user-info.tsx`, `index.ts`, `dropdown-menu.tsx`, `badge.tsx`, `breadcrumbs.tsx`?**
-  _High betweenness centrality (0.058) - this node is a cross-community bridge._
+  _High betweenness centrality (0.057) - this node is a cross-community bridge._
 - **Should `react` be split into smaller, more focused modules?**
   _Cohesion score 0.058220773171867725 - nodes in this community are weakly interconnected._
 - **Why does `react` connect `react` to `dashboard.tsx`, `lucide-react`, `toggle-group.tsx`, `navbar.tsx`, `cn`, `dependencies`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `app-sidebar.tsx`, `user-info.tsx`, `index.ts`, `package.json`, `cn`, `dropdown-menu.tsx`, `badge.tsx`, `breadcrumbs.tsx`?**
@@ -341,7 +341,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `dashboard.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.06129426129426129 - nodes in this community are weakly interconnected._
 - **Why does `@inertiajs/react` connect `react` to `dashboard.tsx`, `lucide-react`, `navbar.tsx`, `dependencies`, `use-appearance.tsx`, `two-factor-recovery-codes.tsx`, `app-sidebar.tsx`, `user-info.tsx`, `index.ts`, `package.json`, `dropdown-menu.tsx`, `breadcrumbs.tsx`?**
-  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+  _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **Should `lucide-react` be split into smaller, more focused modules?**
   _Cohesion score 0.10235690235690235 - nodes in this community are weakly interconnected._
 - **Should `Illuminate\Database\Schema\Blueprint` be split into smaller, more focused modules?**
